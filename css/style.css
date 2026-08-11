@@ -1,1 +1,494 @@
+/* =========================
+   Colour and spacing system
+   ========================= */
 
+:root {
+    --football-green: #08783e;
+    --football-green-dark: #04582d;
+    --football-green-light: #dff4e7;
+    --football-lime: #a7ec8b;
+    --football-dark: #071b14;
+    --football-text: #1d2923;
+    --football-muted: #5e6b64;
+    --football-background: #f5f8f6;
+    --football-white: #ffffff;
+    --football-border: #dce5df;
+}
+
+
+/* =========================
+   General website design
+   ========================= */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: var(--football-text);
+    background-color: var(--football-white);
+    line-height: 1.65;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.2;
+}
+
+a,
+button {
+    transition:
+        background-color 0.2s,
+        border-color 0.2s,
+        color 0.2s,
+        transform 0.2s,
+        box-shadow 0.2s;
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid #ffd45c;
+    outline-offset: 3px;
+}
+
+
+/* Accessibility skip link */
+
+.skip-link {
+    position: fixed;
+    top: 12px;
+    left: 12px;
+    z-index: 2000;
+    padding: 10px 16px;
+    color: var(--football-dark);
+    background-color: #ffd45c;
+    border-radius: 8px;
+    transform: translateY(-150%);
+}
+
+.skip-link:focus {
+    transform: translateY(0);
+}
+
+
+/* =========================
+   Navigation
+   ========================= */
+
+.site-navbar {
+    min-height: 72px;
+    background-color: var(--football-dark);
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.18);
+}
+
+.brand-mark {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    color: var(--football-dark);
+    background-color: var(--football-lime);
+    border-radius: 50%;
+    font-size: 0.9rem;
+    font-weight: 800;
+}
+
+.navbar .nav-link {
+    margin: 3px 6px;
+    padding: 9px 12px;
+    color: rgba(255, 255, 255, 0.78);
+    border-radius: 8px;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    color: var(--football-white);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar .nav-link.active {
+    color: var(--football-white);
+    background-color: rgba(167, 236, 139, 0.16);
+}
+
+.nav-join-button {
+    min-width: 105px;
+    color: var(--football-dark);
+    font-weight: 700;
+}
+
+
+/* =========================
+   Hero section
+   ========================= */
+
+.hero-section {
+    min-height: 620px;
+    display: flex;
+    align-items: center;
+    padding: 90px 0;
+    color: var(--football-white);
+    background-color: var(--football-dark);
+
+    /*
+       Add an image called football-hero.jpg to the images folder.
+       The green gradient will still appear if the image is missing.
+    */
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(7, 27, 20, 0.98) 0%,
+            rgba(7, 27, 20, 0.91) 52%,
+            rgba(7, 27, 20, 0.7) 100%
+        ),
+        url("../images/football-hero.jpg");
+
+    background-position: center;
+    background-size: cover;
+}
+
+.hero-copy {
+    max-width: 760px;
+}
+
+.eyebrow,
+.section-kicker,
+.journey-label {
+    color: var(--football-green);
+    font-size: 0.82rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.hero-section .eyebrow,
+.journey-label {
+    color: var(--football-lime);
+}
+
+.hero-description {
+    max-width: 660px;
+    color: rgba(255, 255, 255, 0.83);
+}
+
+.hero-actions .btn {
+    min-width: 195px;
+}
+
+.hero-points {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 24px;
+    color: rgba(255, 255, 255, 0.82);
+}
+
+.hero-points li::before {
+    content: "✓";
+    margin-right: 8px;
+    color: var(--football-lime);
+    font-weight: 800;
+}
+
+
+/* Journey card */
+
+.journey-card {
+    padding: 32px;
+    color: var(--football-white);
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 22px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 24px 55px rgba(0, 0, 0, 0.28);
+}
+
+.journey-step {
+    display: flex;
+    gap: 16px;
+    padding: 18px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.journey-step p {
+    color: rgba(255, 255, 255, 0.72);
+}
+
+.step-number {
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    color: var(--football-dark);
+    background-color: var(--football-lime);
+    border-radius: 50%;
+    font-weight: 800;
+}
+
+
+/* =========================
+   General sections
+   ========================= */
+
+.section-space {
+    padding: 90px 0;
+}
+
+.section-heading {
+    max-width: 720px;
+    margin: 0 auto 48px;
+}
+
+.section-heading h2 {
+    font-size: clamp(2rem, 4vw, 2.8rem);
+}
+
+.bg-soft {
+    background-color: var(--football-background);
+}
+
+
+/* Benefits cards */
+
+.feature-card {
+    padding: 32px;
+    background-color: var(--football-white);
+    border: 1px solid var(--football-border);
+    border-radius: 18px;
+    box-shadow: 0 10px 32px rgba(7, 27, 20, 0.07);
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 18px 38px rgba(7, 27, 20, 0.12);
+}
+
+.feature-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    margin-bottom: 22px;
+    color: var(--football-green-dark);
+    background-color: var(--football-green-light);
+    border-radius: 14px;
+    font-weight: 800;
+}
+
+
+/* Pathway cards */
+
+.path-card {
+    padding: 32px;
+    background-color: var(--football-white);
+    border: 1px solid var(--football-border);
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(7, 27, 20, 0.06);
+}
+
+.path-card:hover {
+    border-color: var(--football-green);
+    transform: translateY(-5px);
+}
+
+.path-card p {
+    min-height: 78px;
+    color: var(--football-muted);
+}
+
+.path-number {
+    display: block;
+    margin-bottom: 18px;
+    color: var(--football-green);
+    font-size: 2.2rem;
+    font-weight: 800;
+}
+
+
+/* =========================
+   Buttons
+   ========================= */
+
+.btn {
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+.btn-success {
+    color: var(--football-white);
+    background-color: var(--football-green);
+    border-color: var(--football-green);
+}
+
+.btn-success:hover,
+.btn-success:focus {
+    color: var(--football-white);
+    background-color: var(--football-green-dark);
+    border-color: var(--football-green-dark);
+}
+
+.btn-outline-success {
+    color: var(--football-green-dark);
+    border-color: var(--football-green);
+}
+
+.btn-outline-success:hover,
+.btn-outline-success:focus {
+    color: var(--football-white);
+    background-color: var(--football-green);
+    border-color: var(--football-green);
+}
+
+
+/* =========================
+   Goal recommendation
+   ========================= */
+
+.goal-panel {
+    padding: 48px;
+    background-color: var(--football-background);
+    border: 1px solid var(--football-border);
+    border-radius: 24px;
+}
+
+.goal-button {
+    width: 100%;
+    padding: 16px 20px;
+    color: var(--football-text);
+    background-color: var(--football-white);
+    border: 1px solid var(--football-border);
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: left;
+}
+
+.goal-button:hover,
+.goal-button:focus {
+    color: var(--football-green-dark);
+    background-color: var(--football-green-light);
+    border-color: var(--football-green);
+    transform: translateX(4px);
+}
+
+.recommendation-panel {
+    margin-top: 32px;
+    padding: 28px;
+    background-color: var(--football-white);
+    border-left: 6px solid var(--football-green);
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(7, 27, 20, 0.08);
+}
+
+
+/* =========================
+   Final call to action
+   ========================= */
+
+.final-cta {
+    padding: 55px 30px;
+    color: var(--football-white);
+    background:
+        linear-gradient(135deg, var(--football-green-dark), var(--football-green));
+    border-radius: 24px;
+}
+
+.final-cta p {
+    max-width: 650px;
+    margin: 16px auto 26px;
+    color: rgba(255, 255, 255, 0.83);
+}
+
+
+/* =========================
+   Footer
+   ========================= */
+
+.site-footer {
+    padding: 34px 0;
+    color: rgba(255, 255, 255, 0.74);
+    background-color: var(--football-dark);
+    border-top: 4px solid var(--football-green);
+}
+
+.site-footer .fw-bold {
+    color: var(--football-white);
+}
+
+
+/* =========================
+   Mobile responsiveness
+   ========================= */
+
+@media (max-width: 991.98px) {
+    .hero-section {
+        min-height: auto;
+        padding: 75px 0;
+    }
+
+    .journey-card {
+        margin-top: 20px;
+    }
+
+    .nav-join-button {
+        display: inline-block;
+        margin: 8px 6px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .hero-section {
+        padding: 60px 0;
+    }
+
+    .hero-section .display-3 {
+        font-size: 2.5rem;
+    }
+
+    .hero-actions {
+        display: grid !important;
+    }
+
+    .hero-actions .btn {
+        width: 100%;
+    }
+
+    .hero-points {
+        display: block;
+    }
+
+    .hero-points li {
+        margin-bottom: 8px;
+    }
+
+    .journey-card,
+    .goal-panel,
+    .feature-card,
+    .path-card {
+        padding: 24px;
+    }
+
+    .section-space {
+        padding: 65px 0;
+    }
+}
+
+
+/* Reduce animation for users who prefer less motion */
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition: none !important;
+    }
+}
