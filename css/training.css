@@ -101,9 +101,6 @@ body {
 }
 
 /* ==========================
-
-BELOW ONWARDS IS MY OWN CODE 
-
 */
 
 .training-main {
@@ -125,4 +122,26 @@ BELOW ONWARDS IS MY OWN CODE
     font-weight: 800;
     letter-spacing: 2px;
     margin-bottom: 16px;
+}
+
+.section-heading {
+    padding-top:70px;
+    max-width: 1520px;
+    margin: 0 auto 48px;
+}
+
+.section-kicker {
+    color: #08783e;
+    font-size: 0.82rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.card{
+    background-color: #ffffff;
+    width:100%;
+    min-height:320px;
+    border-radius: 18px;
+    padding:32px;
+    border: 1px solid #dce5df;
 }
