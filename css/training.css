@@ -109,7 +109,9 @@ BELOW ONWARDS IS MY OWN CODE
 .training-main {
     background-color: #071b14;
     color: white;
-    padding: 70px 0 100px;
+    min-height: auto;
+    padding: 75px 0;
+    
 }
 
 .page-hero-description {
