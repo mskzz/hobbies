@@ -492,3 +492,329 @@ button:focus-visible {
         transition: none !important;
     }
 }
+
+
+
+
+
+/* =========================
+   Beginner Guide page
+   ========================= */
+
+section[id] {
+    scroll-margin-top: 95px;
+}
+
+
+/* Page introduction */
+
+.page-hero {
+    padding: 70px 0 100px;
+    color: var(--football-white);
+    background-color: var(--football-dark);
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(7, 27, 20, 0.98) 0%,
+            rgba(7, 27, 20, 0.9) 58%,
+            rgba(7, 27, 20, 0.72) 100%
+        ),
+        url("../images/football-hero.jpg");
+
+    background-position: center;
+    background-size: cover;
+}
+
+.page-hero .eyebrow {
+    color: var(--football-lime);
+}
+
+.page-hero-description {
+    max-width: 760px;
+    color: rgba(255, 255, 255, 0.82);
+}
+
+.page-breadcrumb {
+    margin-bottom: 42px;
+}
+
+.page-breadcrumb a {
+    color: var(--football-lime);
+}
+
+.page-breadcrumb .active {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.page-breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+    color: rgba(255, 255, 255, 0.55);
+}
+
+.page-summary {
+    padding: 28px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 18px;
+    backdrop-filter: blur(10px);
+}
+
+.page-summary li {
+    margin-bottom: 8px;
+    color: rgba(255, 255, 255, 0.82);
+}
+
+
+/* Page contents navigation */
+
+.contents-section {
+    position: relative;
+    z-index: 5;
+    margin-top: -38px;
+}
+
+.contents-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 22px 26px;
+    background-color: var(--football-white);
+    border: 1px solid var(--football-border);
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(7, 27, 20, 0.12);
+}
+
+.contents-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.contents-links a {
+    padding: 7px 12px;
+    color: var(--football-green-dark);
+    background-color: var(--football-green-light);
+    border-radius: 8px;
+    font-size: 0.92rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.contents-links a:hover,
+.contents-links a:focus {
+    color: var(--football-white);
+    background-color: var(--football-green);
+}
+
+
+/* Football overview */
+
+.section-space-sm {
+    padding: 75px 0;
+}
+
+.quick-facts-card {
+    padding: 30px;
+    background-color: var(--football-background);
+    border-left: 6px solid var(--football-green);
+    border-radius: 16px;
+}
+
+.quick-facts-card li {
+    margin-bottom: 12px;
+}
+
+
+/* Rules accordion */
+
+.rules-accordion {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.rules-accordion .accordion-item {
+    margin-bottom: 12px;
+    overflow: hidden;
+    border: 1px solid var(--football-border);
+    border-radius: 12px;
+}
+
+.rules-accordion .accordion-button {
+    padding: 20px;
+    color: var(--football-text);
+    background-color: var(--football-white);
+    font-weight: 700;
+}
+
+.rules-accordion .accordion-button:not(.collapsed) {
+    color: var(--football-green-dark);
+    background-color: var(--football-green-light);
+    box-shadow: none;
+}
+
+.rules-accordion .accordion-button:focus {
+    border-color: var(--football-green);
+    box-shadow: 0 0 0 4px rgba(8, 120, 62, 0.2);
+}
+
+.rules-accordion .accordion-body {
+    padding: 22px;
+}
+
+
+/* Position table */
+
+.position-table-wrapper {
+    overflow: hidden;
+    border: 1px solid var(--football-border);
+    border-radius: 16px;
+    box-shadow: 0 10px 28px rgba(7, 27, 20, 0.07);
+}
+
+.position-table thead {
+    color: var(--football-white);
+    background-color: var(--football-green-dark);
+}
+
+.position-table th,
+.position-table td {
+    padding: 18px;
+}
+
+.position-table tbody tr:nth-child(even) {
+    background-color: var(--football-background);
+}
+
+.position-table tbody tr:hover {
+    background-color: var(--football-green-light);
+}
+
+
+/* Position finder */
+
+.position-finder {
+    padding: 42px;
+    background-color: var(--football-background);
+    border: 1px solid var(--football-border);
+    border-radius: 22px;
+}
+
+.position-finder .form-select {
+    min-height: 54px;
+    border-color: var(--football-border);
+    border-radius: 10px;
+}
+
+.position-finder .form-select:focus {
+    border-color: var(--football-green);
+    box-shadow: 0 0 0 4px rgba(8, 120, 62, 0.18);
+}
+
+.position-result {
+    margin-top: 28px;
+    padding: 24px;
+    background-color: var(--football-white);
+    border-left: 6px solid var(--football-green);
+    border-radius: 12px;
+    box-shadow: 0 8px 22px rgba(7, 27, 20, 0.08);
+}
+
+
+/* Equipment cards */
+
+.equipment-card {
+    padding: 26px;
+    background-color: var(--football-white);
+    border: 1px solid var(--football-border);
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(7, 27, 20, 0.06);
+}
+
+.equipment-card:hover {
+    border-color: var(--football-green);
+    transform: translateY(-4px);
+    box-shadow: 0 14px 30px rgba(7, 27, 20, 0.1);
+}
+
+.equipment-number {
+    display: inline-block;
+    margin-bottom: 18px;
+    color: var(--football-green);
+    font-size: 1.6rem;
+    font-weight: 800;
+}
+
+
+/* Checklist */
+
+.guide-checklist {
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0 10px 28px rgba(7, 27, 20, 0.08);
+}
+
+.guide-checklist .list-group-item {
+    padding: 18px 22px;
+    border-color: var(--football-border);
+}
+
+.guide-checklist .list-group-item::before {
+    color: var(--football-green);
+    font-weight: 800;
+}
+
+
+/* Next-step section */
+
+.next-step-panel {
+    padding: 55px 30px;
+    color: var(--football-white);
+    background:
+        linear-gradient(
+            135deg,
+            var(--football-green-dark),
+            var(--football-green)
+        );
+
+    border-radius: 24px;
+}
+
+.next-step-panel .section-kicker {
+    color: var(--football-lime);
+}
+
+.next-step-panel p {
+    max-width: 660px;
+    margin: 16px auto 26px;
+    color: rgba(255, 255, 255, 0.83);
+}
+
+
+/* Beginner Guide mobile layout */
+
+@media (max-width: 767.98px) {
+    .page-hero {
+        padding: 55px 0 80px;
+    }
+
+    .page-hero .display-3 {
+        font-size: 2.5rem;
+    }
+
+    .contents-card {
+        display: block;
+    }
+
+    .contents-links {
+        margin-top: 16px;
+    }
+
+    .contents-links a {
+        flex-grow: 1;
+        text-align: center;
+    }
+
+    .position-finder {
+        padding: 26px;
+    }
+}
