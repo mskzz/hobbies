@@ -1,10 +1,12 @@
-
 <!doctype html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description"
+          content="KickStart Football helps beginners learn football, practise useful skills and connect with other players.">
 
     <title>KickStart Football | Home</title>
 
@@ -14,21 +16,31 @@
           integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
           crossorigin="anonymous">
 
-    <!-- Our CSS -->
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <!-- Navigation bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+    <!-- Accessibility link for keyboard users -->
+    <a class="skip-link" href="#main-content">
+        Skip to main content
+    </a>
+
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark site-navbar sticky-top"
+         aria-label="Main navigation">
+
         <div class="container">
 
-            <a class="navbar-brand fw-bold" href="index.html">
-                KickStart Football
+            <a class="navbar-brand d-flex align-items-center gap-2"
+               href="index.html">
+
+                <span class="brand-mark" aria-hidden="true">KF</span>
+                <span class="fw-bold">KickStart Football</span>
             </a>
 
-            <!-- Mobile navigation button -->
             <button class="navbar-toggler"
                     type="button"
                     data-bs-toggle="collapse"
@@ -40,9 +52,9 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <!-- Navigation links -->
             <div class="collapse navbar-collapse" id="mainNavbar">
-                <ul class="navbar-nav ms-auto">
+
+                <ul class="navbar-nav ms-auto align-items-lg-center">
 
                     <li class="nav-item">
                         <a class="nav-link active"
@@ -64,59 +76,120 @@
                         </a>
                     </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="joinus.html">
+                    <li class="nav-item ms-lg-2">
+                        <a class="btn btn-light nav-join-button"
+                           href="joinus.html">
                             Join Us
                         </a>
                     </li>
 
                 </ul>
             </div>
+
         </div>
     </nav>
 
 
-    <!-- Main introduction -->
-    <header class="bg-dark text-white py-5">
-        <div class="container py-4">
-            <div class="row align-items-center">
+    <!-- Hero section -->
+    <header class="hero-section">
+        <div class="container">
+            <div class="row align-items-center g-5">
 
-                <div class="col-lg-7">
-                    <p class="text-success fw-bold">
+                <div class="col-lg-7 hero-copy">
+
+                    <p class="eyebrow mb-3">
                         LEARN • TRAIN • PLAY
                     </p>
 
-                    <h1 class="display-4 fw-bold">
-                        Start your football journey
+                    <h1 class="display-3 fw-bold">
+                        Start playing football with confidence
                     </h1>
 
-                    <p class="lead mt-3">
-                        KickStart Football helps beginners understand the game,
-                        practise useful skills and become confident enough to
-                        start playing with others.
+                    <p class="lead hero-description">
+                        KickStart Football gives beginners a simple path
+                        to understand the game, practise essential skills
+                        and start playing with other people.
                     </p>
 
-                    <a href="="beginnerguide.html"
-                       class="btn btn-success btn-lg mt-3">
-                        View Beginner Guide
-                    </a>
-                </div>
+                    <div class="hero-actions d-flex flex-wrap gap-3 mt-4">
 
-                <div class="col-lg-5 mt-4 mt-lg-0">
-                    <div class="bg-white text-dark p-4 rounded-4 shadow">
+                        <a href="beginnerguide.html"
+                           class="btn btn-success btn-lg">
+                            Start Beginner Guide
+                        </a>
 
-                        <h2 class="h4 fw-bold">
-                            Your football journey
-                        </h2>
-
-                        <ol class="mt-3 mb-0">
-                            <li class="mb-2">Understand the basics</li>
-                            <li class="mb-2">Learn the positions</li>
-                            <li class="mb-2">Practise your skills</li>
-                            <li>Join other football players</li>
-                        </ol>
+                        <a href="#pathway"
+                           class="btn btn-outline-light btn-lg">
+                            Explore the Website
+                        </a>
 
                     </div>
+
+                    <ul class="hero-points list-unstyled mt-4 mb-0">
+
+                        <li>Beginner-friendly information</li>
+                        <li>Clear learning sequence</li>
+                        <li>Responsive on mobile devices</li>
+
+                    </ul>
+
+                </div>
+
+
+                <div class="col-lg-5">
+
+                    <aside class="journey-card"
+                           aria-labelledby="journey-title">
+
+                        <p class="journey-label mb-2">
+                            YOUR JOURNEY
+                        </p>
+
+                        <h2 id="journey-title" class="h3 fw-bold mb-4">
+                            From beginner to player
+                        </h2>
+
+                        <div class="journey-step">
+
+                            <span class="step-number">1</span>
+
+                            <div>
+                                <h3 class="h5 mb-1">Learn</h3>
+                                <p class="mb-0">
+                                    Understand the rules, positions and equipment.
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="journey-step">
+
+                            <span class="step-number">2</span>
+
+                            <div>
+                                <h3 class="h5 mb-1">Train</h3>
+                                <p class="mb-0">
+                                    Practise passing, dribbling and shooting.
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="journey-step">
+
+                            <span class="step-number">3</span>
+
+                            <div>
+                                <h3 class="h5 mb-1">Play</h3>
+                                <p class="mb-0">
+                                    Connect with others and enjoy the game.
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </aside>
+
                 </div>
 
             </div>
@@ -124,71 +197,95 @@
     </header>
 
 
-    <main>
+    <main id="main-content">
 
-        <!-- Benefits of football -->
-        <section class="py-5">
+        <!-- Benefits section -->
+        <section class="section-space"
+                 aria-labelledby="benefits-title">
+
             <div class="container">
 
-                <div class="text-center mb-4">
-                    <h2 class="fw-bold">Why play football?</h2>
+                <div class="section-heading text-center">
+
+                    <p class="section-kicker">WHY FOOTBALL?</p>
+
+                    <h2 id="benefits-title" class="fw-bold">
+                        More than just a game
+                    </h2>
 
                     <p class="text-secondary">
-                        Football provides physical, social and personal benefits.
+                        Football supports physical health, social development
+                        and personal confidence.
                     </p>
+
                 </div>
+
 
                 <div class="row g-4">
 
                     <div class="col-md-4">
-                        <div class="card h-100 border-0 shadow-sm">
-                            <div class="card-body p-4">
 
-                                <h3 class="h5 fw-bold text-success">
-                                    Stay Active
-                                </h3>
+                        <article class="feature-card h-100">
 
-                                <p class="card-text">
-                                    Playing football improves fitness, stamina
-                                    and coordination while keeping exercise enjoyable.
-                                </p>
-
+                            <div class="feature-number" aria-hidden="true">
+                                01
                             </div>
-                        </div>
+
+                            <h3 class="h4 fw-bold">
+                                Stay Active
+                            </h3>
+
+                            <p class="mb-0">
+                                Football develops fitness, stamina and
+                                coordination while making exercise enjoyable.
+                            </p>
+
+                        </article>
+
                     </div>
 
+
                     <div class="col-md-4">
-                        <div class="card h-100 border-0 shadow-sm">
-                            <div class="card-body p-4">
 
-                                <h3 class="h5 fw-bold text-success">
-                                    Build Teamwork
-                                </h3>
+                        <article class="feature-card h-100">
 
-                                <p class="card-text">
-                                    Players learn how to communicate, cooperate
-                                    and work towards a shared goal.
-                                </p>
-
+                            <div class="feature-number" aria-hidden="true">
+                                02
                             </div>
-                        </div>
+
+                            <h3 class="h4 fw-bold">
+                                Build Teamwork
+                            </h3>
+
+                            <p class="mb-0">
+                                Players communicate, cooperate and work
+                                together towards the same objective.
+                            </p>
+
+                        </article>
+
                     </div>
 
+
                     <div class="col-md-4">
-                        <div class="card h-100 border-0 shadow-sm">
-                            <div class="card-body p-4">
 
-                                <h3 class="h5 fw-bold text-success">
-                                    Grow Confidence
-                                </h3>
+                        <article class="feature-card h-100">
 
-                                <p class="card-text">
-                                    Learning new skills and improving through
-                                    practice can build confidence both on and off the field.
-                                </p>
-
+                            <div class="feature-number" aria-hidden="true">
+                                03
                             </div>
-                        </div>
+
+                            <h3 class="h4 fw-bold">
+                                Grow Confidence
+                            </h3>
+
+                            <p class="mb-0">
+                                Improving through regular practice helps
+                                players become more confident on and off the field.
+                            </p>
+
+                        </article>
+
                     </div>
 
                 </div>
@@ -196,85 +293,196 @@
         </section>
 
 
-        <!-- Website features -->
-        <section class="bg-light py-5">
+        <!-- Website pathway -->
+        <section id="pathway"
+                 class="section-space bg-soft"
+                 aria-labelledby="pathway-title">
+
             <div class="container">
 
-                <div class="text-center mb-4">
-                    <h2 class="fw-bold">What can you find here?</h2>
+                <div class="section-heading text-center">
+
+                    <p class="section-kicker">WHERE SHOULD I START?</p>
+
+                    <h2 id="pathway-title" class="fw-bold">
+                        Follow a simple pathway
+                    </h2>
 
                     <p class="text-secondary">
-                        Follow the sections in order to begin playing football.
+                        Each section supports a different stage of your
+                        football journey.
                     </p>
+
                 </div>
+
 
                 <div class="row g-4">
 
-                    <div class="col-md-4">
-                        <div class="card h-100">
-                            <div class="card-body p-4">
+                    <div class="col-lg-4">
 
-                                <h3 class="h5 fw-bold">
-                                    Beginner Guide
-                                </h3>
+                        <article class="path-card h-100">
 
-                                <p>
-                                    Understand the basic rules, positions
-                                    and equipment needed to begin.
-                                </p>
+                            <span class="path-number">1</span>
 
-                                <a href="beginnerguide.html"
-                                   class="btn btn-outline-success">
-                                    Learn the Basics
-                                </a>
+                            <h3 class="h4 fw-bold">
+                                Beginner Guide
+                            </h3>
 
-                            </div>
-                        </div>
+                            <p>
+                                Learn the rules, player positions and equipment
+                                needed before your first game.
+                            </p>
+
+                            <a href="beginnerguide.html"
+                               class="btn btn-outline-success">
+                                Learn the Basics
+                            </a>
+
+                        </article>
+
                     </div>
 
-                    <div class="col-md-4">
-                        <div class="card h-100">
-                            <div class="card-body p-4">
 
-                                <h3 class="h5 fw-bold">
-                                    Training
-                                </h3>
+                    <div class="col-lg-4">
 
-                                <p>
-                                    Explore simple drills that help improve
-                                    passing, dribbling and shooting.
-                                </p>
+                        <article class="path-card h-100">
 
-                                <a href="training.html"
-                                   class="btn btn-outline-success">
-                                    View Training
-                                </a>
+                            <span class="path-number">2</span>
 
-                            </div>
-                        </div>
+                            <h3 class="h4 fw-bold">
+                                Training
+                            </h3>
+
+                            <p>
+                                Explore beginner drills that improve passing,
+                                dribbling and shooting.
+                            </p>
+
+                            <a href="training.html"
+                               class="btn btn-outline-success">
+                                View Training
+                            </a>
+
+                        </article>
+
                     </div>
 
-                    <div class="col-md-4">
-                        <div class="card h-100">
-                            <div class="card-body p-4">
 
-                                <h3 class="h5 fw-bold">
-                                    Join Us
-                                </h3>
+                    <div class="col-lg-4">
 
-                                <p>
-                                    Register your interest and connect
-                                    with other people who want to play.
-                                </p>
+                        <article class="path-card h-100">
 
-                                <a href="joinus.html"
-                                   class="btn btn-outline-success">
-                                    Join the Community
-                                </a>
+                            <span class="path-number">3</span>
+
+                            <h3 class="h4 fw-bold">
+                                Join Us
+                            </h3>
+
+                            <p>
+                                Register your interest and connect with
+                                other people who want to play.
+                            </p>
+
+                            <a href="joinus.html"
+                               class="btn btn-outline-success">
+                                Join the Community
+                            </a>
+
+                        </article>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Interactive recommendation feature -->
+        <section class="section-space"
+                 aria-labelledby="goal-title">
+
+            <div class="container">
+
+                <div class="goal-panel">
+
+                    <div class="row align-items-center g-4">
+
+                        <div class="col-lg-5">
+
+                            <p class="section-kicker">
+                                QUICK RECOMMENDATION
+                            </p>
+
+                            <h2 id="goal-title" class="fw-bold">
+                                What is your goal?
+                            </h2>
+
+                            <p class="text-secondary mb-lg-0">
+                                Select what you would like to do, and we will
+                                recommend the most useful page for you.
+                            </p>
+
+                        </div>
+
+
+                        <div class="col-lg-7">
+
+                            <div class="d-grid gap-3">
+
+                                <button type="button"
+                                        class="goal-button"
+                                        onclick="recommendPage('learn')">
+
+                                    I want to learn the rules
+                                </button>
+
+                                <button type="button"
+                                        class="goal-button"
+                                        onclick="recommendPage('train')">
+
+                                    I want to improve my skills
+                                </button>
+
+                                <button type="button"
+                                        class="goal-button"
+                                        onclick="recommendPage('join')">
+
+                                    I want to find people to play with
+                                </button>
 
                             </div>
+
                         </div>
+
                     </div>
+
+
+                    <!-- JavaScript changes this section -->
+                    <div id="recommendation"
+                         class="recommendation-panel d-none"
+                         tabindex="-1"
+                         aria-live="polite">
+
+                        <h3 id="recommendationTitle"
+                            class="h4 fw-bold">
+                        </h3>
+
+                        <p id="recommendationText"></p>
+
+                        <a id="recommendationLink"
+                           class="btn btn-success"
+                           href="#">
+                        </a>
+
+                    </div>
+
+
+                    <noscript>
+                        <p class="alert alert-warning mt-4 mb-0">
+                            JavaScript is disabled. Please use the navigation
+                            menu to choose a page.
+                        </p>
+                    </noscript>
 
                 </div>
             </div>
@@ -282,20 +490,26 @@
 
 
         <!-- Final call to action -->
-        <section class="py-5">
-            <div class="container text-center">
+        <section class="pb-5">
+            <div class="container">
 
-                <h2 class="fw-bold">Ready to get started?</h2>
+                <div class="final-cta text-center">
 
-                <p class="text-secondary">
-                    Begin by learning the essential information every new
-                    football player should know.
-                </p>
+                    <h2 class="fw-bold">
+                        Ready to begin?
+                    </h2>
 
-                <a href="beginnerguide.html"
-                   class="btn btn-success">
-                    Start Learning
-                </a>
+                    <p>
+                        Start with the Beginner Guide and learn the
+                        essential information every new player should know.
+                    </p>
+
+                    <a href="beginnerguide.html"
+                       class="btn btn-light btn-lg">
+                        Start Learning
+                    </a>
+
+                </div>
 
             </div>
         </section>
@@ -304,19 +518,69 @@
 
 
     <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-4">
+    <footer class="site-footer">
         <div class="container">
+            <div class="row align-items-center g-3">
 
-            <p class="mb-1">
-                KickStart Football
-            </p>
+                <div class="col-md-6 text-center text-md-start">
 
-            <p class="small text-white-50 mb-0">
-                Created by Sheng Kai and Wilson
-            </p>
+                    <p class="fw-bold mb-1">
+                        KickStart Football
+                    </p>
 
+                    <p class="small mb-0">
+                        Helping beginners learn, train and play.
+                    </p>
+
+                </div>
+
+                <div class="col-md-6 text-center text-md-end">
+
+                    <p class="small mb-0">
+                        Created by Sheng Kai and Wilson
+                    </p>
+
+                </div>
+
+            </div>
         </div>
     </footer>
+
+
+    <!-- Custom JavaScript -->
+    <script>
+        function recommendPage(goal) {
+            const recommendation = document.getElementById("recommendation");
+            const title = document.getElementById("recommendationTitle");
+            const text = document.getElementById("recommendationText");
+            const link = document.getElementById("recommendationLink");
+
+            if (goal === "learn") {
+                title.textContent = "Start with the Beginner Guide";
+                text.textContent =
+                    "Learn the basic rules, positions and equipment before playing.";
+                link.textContent = "Open Beginner Guide";
+                link.href = "beginnerguide.html";
+            }
+            else if (goal === "train") {
+                title.textContent = "Continue to the Training page";
+                text.textContent =
+                    "Practise beginner drills for passing, dribbling and shooting.";
+                link.textContent = "Open Training";
+                link.href = "training.html";
+            }
+            else {
+                title.textContent = "Continue to the Join Us page";
+                text.textContent =
+                    "Register your interest and connect with other football players.";
+                link.textContent = "Open Join Us";
+                link.href = "joinus.html";
+            }
+
+            recommendation.classList.remove("d-none");
+            recommendation.focus();
+        }
+    </script>
 
 
     <!-- Bootstrap 5 JavaScript -->
