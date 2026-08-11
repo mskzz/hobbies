@@ -1,1 +1,126 @@
-# Yo Yo Yo
+/* =========================
+   Shared website colours
+   ========================= */
+
+:root {
+    --football-green: #08783e;
+    --football-green-dark: #04582d;
+    --football-green-light: #dff4e7;
+    --football-lime: #a7ec8b;
+    --football-dark: #071b14;
+    --football-text: #1d2923;
+    --football-white: #ffffff;
+}
+
+
+/* =========================
+   General
+   ========================= */
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: var(--football-text);
+}
+
+
+/* =========================
+   Navbar
+   ========================= */
+
+.site-navbar {
+    min-height: 72px;
+    background-color: var(--football-dark);
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.18);
+}
+
+.brand-mark {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 40px;
+    height: 40px;
+
+    background-color: var(--football-lime);
+    color: var(--football-dark);
+
+    border-radius: 50%;
+
+    font-size: 0.9rem;
+    font-weight: 800;
+}
+
+.navbar .nav-link {
+    margin: 3px 6px;
+    padding: 9px 12px;
+
+    color: rgba(255, 255, 255, 0.78);
+
+    border-radius: 8px;
+}
+
+.navbar .nav-link:hover {
+    color: white;
+}
+
+.navbar .nav-link.active {
+    color: white;
+
+    background-color: rgba(167, 236, 139, 0.16);
+}
+
+.nav-join-button {
+    min-width: 105px;
+    font-weight: 700;
+}
+
+
+/* =========================
+   Your page
+   ========================= */
+
+.page-section {
+    padding: 80px 0;
+}
+
+
+/* =========================
+   Footer
+   ========================= */
+
+.site-footer {
+    padding: 34px 0;
+    color: rgba(255, 255, 255, 0.74);
+    background-color: var(--football-dark);
+    border-top: 4px solid var(--football-green);
+}
+
+.site-footer .fw-bold {
+    color: white;
+}
+
+/* ==========================
+
+BELOW ONWARDS IS MY OWN CODE 
+
+*/
+
+.training-main {
+    background-color: #071b14;
+    color: white;
+    padding: 70px 0 100px;
+}
+
+.page-hero-description {
+    max-width: 760px;
+    color: rgba(255, 255, 255, 0.82);
+}
+
+.training-top-caption {
+    color: #a7ec8b;
+    font-size: 0.82rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 16px;
+}
