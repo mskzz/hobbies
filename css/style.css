@@ -1,6 +1,10 @@
-/* =========================
-   Colour and spacing system
-   ========================= */
+/* ============================================================
+   PART 1: SHARED STYLES
+   Used by index.html and beginnerguide.html
+   ============================================================ */
+
+
+/* ---------- Colour system ---------- */
 
 :root {
     --football-green: #08783e;
@@ -16,9 +20,7 @@
 }
 
 
-/* =========================
-   General website design
-   ========================= */
+/* ---------- General design ---------- */
 
 html {
     scroll-behavior: smooth;
@@ -26,9 +28,9 @@ html {
 
 body {
     margin: 0;
-    font-family: "Segoe UI", Arial, sans-serif;
     color: var(--football-text);
     background-color: var(--football-white);
+    font-family: "Segoe UI", Arial, sans-serif;
     line-height: 1.65;
 }
 
@@ -38,12 +40,16 @@ h3 {
     line-height: 1.2;
 }
 
+section[id] {
+    scroll-margin-top: 90px;
+}
+
 a,
 button {
     transition:
+        color 0.2s,
         background-color 0.2s,
         border-color 0.2s,
-        color 0.2s,
         transform 0.2s,
         box-shadow 0.2s;
 }
@@ -55,7 +61,7 @@ button:focus-visible {
 }
 
 
-/* Accessibility skip link */
+/* ---------- Accessibility ---------- */
 
 .skip-link {
     position: fixed;
@@ -74,9 +80,7 @@ button:focus-visible {
 }
 
 
-/* =========================
-   Navigation
-   ========================= */
+/* ---------- Navigation ---------- */
 
 .site-navbar {
     min-height: 72px;
@@ -122,9 +126,134 @@ button:focus-visible {
 }
 
 
-/* =========================
-   Hero section
-   ========================= */
+/* ---------- Buttons ---------- */
+
+.btn {
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+.btn-success {
+    color: var(--football-white);
+    background-color: var(--football-green);
+    border-color: var(--football-green);
+}
+
+.btn-success:hover,
+.btn-success:focus {
+    color: var(--football-white);
+    background-color: var(--football-green-dark);
+    border-color: var(--football-green-dark);
+}
+
+.btn-outline-success {
+    color: var(--football-green-dark);
+    border-color: var(--football-green);
+}
+
+.btn-outline-success:hover,
+.btn-outline-success:focus {
+    color: var(--football-white);
+    background-color: var(--football-green);
+    border-color: var(--football-green);
+}
+
+
+/* ---------- Shared sections ---------- */
+
+.section-space {
+    padding: 90px 0;
+}
+
+.section-space-sm {
+    padding: 75px 0;
+}
+
+.section-heading {
+    max-width: 720px;
+    margin: 0 auto 48px;
+}
+
+.section-heading h2 {
+    font-size: clamp(2rem, 4vw, 2.8rem);
+}
+
+.section-kicker {
+    margin-bottom: 10px;
+    color: var(--football-green);
+    font-size: 0.82rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.bg-soft {
+    background-color: var(--football-background);
+}
+
+
+/* ---------- Footer ---------- */
+
+.site-footer {
+    padding: 34px 0;
+    color: rgba(255, 255, 255, 0.74);
+    background-color: var(--football-dark);
+    border-top: 4px solid var(--football-green);
+}
+
+.site-footer .fw-bold {
+    color: var(--football-white);
+}
+
+
+/* ---------- Shared responsive design ---------- */
+
+@media (max-width: 991.98px) {
+    .nav-join-button {
+        display: inline-block;
+        margin: 8px 6px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .section-space {
+        padding: 65px 0;
+    }
+
+    .section-space-sm {
+        padding: 60px 0;
+    }
+}
+
+
+/* Reduce movement for users who prefer less animation */
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition: none !important;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* ============================================================
+   PART 2: INDEX.HTML STYLES
+   Only used by the Home page
+   ============================================================ */
+
+
+/* ---------- Home hero ---------- */
 
 .hero-section {
     min-height: 620px;
@@ -135,8 +264,8 @@ button:focus-visible {
     background-color: var(--football-dark);
 
     /*
-       Add an image called football-hero.jpg to the images folder.
-       The green gradient will still appear if the image is missing.
+       Optional background image:
+       images/football-hero.jpg
     */
     background-image:
         linear-gradient(
@@ -156,17 +285,11 @@ button:focus-visible {
 }
 
 .eyebrow,
-.section-kicker,
 .journey-label {
-    color: var(--football-green);
+    color: var(--football-lime);
     font-size: 0.82rem;
     font-weight: 800;
     letter-spacing: 2px;
-}
-
-.hero-section .eyebrow,
-.journey-label {
-    color: var(--football-lime);
 }
 
 .hero-description {
@@ -193,7 +316,7 @@ button:focus-visible {
 }
 
 
-/* Journey card */
+/* ---------- Journey card ---------- */
 
 .journey-card {
     padding: 32px;
@@ -230,58 +353,159 @@ button:focus-visible {
 }
 
 
-/* =========================
-   General sections
-   ========================= */
+/* ---------- Automatic slideshow ---------- */
 
-.section-space {
-    padding: 90px 0;
+.slideshow-section {
+    padding: 85px 0;
+    background-color: var(--football-white);
 }
 
-.section-heading {
-    max-width: 720px;
-    margin: 0 auto 48px;
+.slideshow-section .container {
+    max-width: 1400px;
 }
 
-.section-heading h2 {
-    font-size: clamp(2rem, 4vw, 2.8rem);
+.carousel-frame {
+    max-width: 1300px;
+    margin: 0 auto;
 }
 
-.bg-soft {
-    background-color: var(--football-background);
+.carousel-inner {
+    overflow: hidden;
+    border-radius: 22px;
+    box-shadow: 0 18px 45px rgba(7, 27, 20, 0.18);
+}
+
+.carousel-image {
+    height: 650px;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 90px 40px 35px;
+    text-align: left;
+    background:
+        linear-gradient(
+            transparent,
+            rgba(0, 0, 0, 0.85)
+        );
+}
+
+.carousel-caption p {
+    max-width: 600px;
+    margin-bottom: 0;
+}
+
+.carousel-indicators {
+    margin-bottom: 18px;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 34px;
+    height: 5px;
+    border: 0;
+    border-radius: 5px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 10%;
 }
 
 
-/* Benefits cards */
+/* ---------- Why Football ---------- */
 
-.feature-card {
-    padding: 32px;
+.why-football-section {
+    background-color: var(--football-white);
+}
+
+.why-introduction {
+    color: var(--football-muted);
+    font-size: 1.08rem;
+}
+
+.benefit-card {
+    position: relative;
+    overflow: hidden;
+    padding: 30px;
     background-color: var(--football-white);
     border: 1px solid var(--football-border);
     border-radius: 18px;
-    box-shadow: 0 10px 32px rgba(7, 27, 20, 0.07);
+    box-shadow: 0 10px 30px rgba(7, 27, 20, 0.07);
 }
 
-.feature-card:hover {
-    transform: translateY(-5px);
+.benefit-card::after {
+    content: "";
+    position: absolute;
+    right: -35px;
+    bottom: -35px;
+    width: 100px;
+    height: 100px;
+    background-color: var(--football-green-light);
+    border-radius: 50%;
+    opacity: 0.6;
+}
+
+.benefit-card:hover {
+    border-color: var(--football-green);
+    transform: translateY(-6px);
     box-shadow: 0 18px 38px rgba(7, 27, 20, 0.12);
 }
 
-.feature-number {
+.benefit-marker {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     width: 48px;
     height: 48px;
-    margin-bottom: 22px;
+    margin-bottom: 24px;
     color: var(--football-green-dark);
     background-color: var(--football-green-light);
     border-radius: 14px;
     font-weight: 800;
 }
 
+.benefit-category {
+    margin-bottom: 8px;
+    color: var(--football-green);
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
 
-/* Pathway cards */
+.benefit-card p {
+    position: relative;
+    z-index: 1;
+    color: var(--football-muted);
+}
+
+.benefit-result {
+    padding-top: 15px;
+    color: var(--football-green-dark) !important;
+    border-top: 1px solid var(--football-border);
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.why-summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 30px;
+    background-color: var(--football-background);
+    border-left: 6px solid var(--football-green);
+    border-radius: 14px;
+}
+
+.why-summary p {
+    color: var(--football-muted);
+}
+
+
+/* ---------- Website pathway ---------- */
 
 .path-card {
     padding: 32px;
@@ -310,44 +534,7 @@ button:focus-visible {
 }
 
 
-/* =========================
-   Buttons
-   ========================= */
-
-.btn {
-    border-radius: 10px;
-    font-weight: 700;
-}
-
-.btn-success {
-    color: var(--football-white);
-    background-color: var(--football-green);
-    border-color: var(--football-green);
-}
-
-.btn-success:hover,
-.btn-success:focus {
-    color: var(--football-white);
-    background-color: var(--football-green-dark);
-    border-color: var(--football-green-dark);
-}
-
-.btn-outline-success {
-    color: var(--football-green-dark);
-    border-color: var(--football-green);
-}
-
-.btn-outline-success:hover,
-.btn-outline-success:focus {
-    color: var(--football-white);
-    background-color: var(--football-green);
-    border-color: var(--football-green);
-}
-
-
-/* =========================
-   Goal recommendation
-   ========================= */
+/* ---------- Goal recommendation ---------- */
 
 .goal-panel {
     padding: 48px;
@@ -386,15 +573,18 @@ button:focus-visible {
 }
 
 
-/* =========================
-   Final call to action
-   ========================= */
+/* ---------- Final Home call-to-action ---------- */
 
 .final-cta {
     padding: 55px 30px;
     color: var(--football-white);
     background:
-        linear-gradient(135deg, var(--football-green-dark), var(--football-green));
+        linear-gradient(
+            135deg,
+            var(--football-green-dark),
+            var(--football-green)
+        );
+
     border-radius: 24px;
 }
 
@@ -405,25 +595,7 @@ button:focus-visible {
 }
 
 
-/* =========================
-   Footer
-   ========================= */
-
-.site-footer {
-    padding: 34px 0;
-    color: rgba(255, 255, 255, 0.74);
-    background-color: var(--football-dark);
-    border-top: 4px solid var(--football-green);
-}
-
-.site-footer .fw-bold {
-    color: var(--football-white);
-}
-
-
-/* =========================
-   Mobile responsiveness
-   ========================= */
+/* ---------- Index responsive design ---------- */
 
 @media (max-width: 991.98px) {
     .hero-section {
@@ -434,10 +606,37 @@ button:focus-visible {
     .journey-card {
         margin-top: 20px;
     }
+}
 
-    .nav-join-button {
-        display: inline-block;
-        margin: 8px 6px;
+@media (max-width: 767.98px) {
+    .slideshow-section {
+        padding: 65px 0;
+    }
+
+    .carousel-image {
+        height: 340px;
+    }
+
+    .carousel-caption {
+        padding: 70px 22px 20px;
+    }
+
+    .carousel-caption h3 {
+        font-size: 1.25rem;
+    }
+
+    .carousel-caption p {
+        font-size: 0.9rem;
+    }
+
+    .why-summary {
+        display: block;
+        text-align: center;
+    }
+
+    .why-summary .btn {
+        width: 100%;
+        margin-top: 22px;
     }
 }
 
@@ -467,51 +666,38 @@ button:focus-visible {
     }
 
     .journey-card,
-    .goal-panel,
-    .feature-card,
-    .path-card {
+    .benefit-card,
+    .path-card,
+    .goal-panel {
         padding: 24px;
     }
-
-    .section-space {
-        padding: 65px 0;
-    }
-}
-
-
-/* Reduce animation for users who prefer less motion */
-
-@media (prefers-reduced-motion: reduce) {
-    html {
-        scroll-behavior: auto;
-    }
-
-    *,
-    *::before,
-    *::after {
-        transition: none !important;
-    }
 }
 
 
 
 
 
-/* =========================
-   Beginner Guide page
-   ========================= */
-
-section[id] {
-    scroll-margin-top: 95px;
-}
 
 
-/* Page introduction */
+
+
+/* ============================================================
+   PART 3: BEGINNERGUIDE.HTML STYLES
+   Only used by the Beginner Guide page
+   ============================================================ */
+
+
+/* ---------- Beginner Guide hero ---------- */
 
 .page-hero {
     padding: 70px 0 100px;
     color: var(--football-white);
     background-color: var(--football-dark);
+
+    /*
+       Optional background image:
+       images/football-hero.jpg
+    */
     background-image:
         linear-gradient(
             90deg,
@@ -527,6 +713,9 @@ section[id] {
 
 .page-hero .eyebrow {
     color: var(--football-lime);
+    font-size: 0.82rem;
+    font-weight: 800;
+    letter-spacing: 2px;
 }
 
 .page-hero-description {
@@ -564,7 +753,7 @@ section[id] {
 }
 
 
-/* Page contents navigation */
+/* ---------- Page contents navigation ---------- */
 
 .contents-section {
     position: relative;
@@ -607,11 +796,7 @@ section[id] {
 }
 
 
-/* Football overview */
-
-.section-space-sm {
-    padding: 75px 0;
-}
+/* ---------- Football overview ---------- */
 
 .quick-facts-card {
     padding: 30px;
@@ -625,7 +810,7 @@ section[id] {
 }
 
 
-/* Rules accordion */
+/* ---------- Rules accordion ---------- */
 
 .rules-accordion {
     max-width: 900px;
@@ -662,7 +847,7 @@ section[id] {
 }
 
 
-/* Position table */
+/* ---------- Positions table ---------- */
 
 .position-table-wrapper {
     overflow: hidden;
@@ -671,26 +856,27 @@ section[id] {
     box-shadow: 0 10px 28px rgba(7, 27, 20, 0.07);
 }
 
-.position-table thead {
+.position-table thead th {
+    padding: 18px;
     color: var(--football-white);
     background-color: var(--football-green-dark);
 }
 
-.position-table th,
-.position-table td {
+.position-table tbody th,
+.position-table tbody td {
     padding: 18px;
 }
 
-.position-table tbody tr:nth-child(even) {
+.position-table tbody tr:nth-child(even) > * {
     background-color: var(--football-background);
 }
 
-.position-table tbody tr:hover {
+.position-table tbody tr:hover > * {
     background-color: var(--football-green-light);
 }
 
 
-/* Position finder */
+/* ---------- Position finder ---------- */
 
 .position-finder {
     padding: 42px;
@@ -720,7 +906,7 @@ section[id] {
 }
 
 
-/* Equipment cards */
+/* ---------- Equipment cards ---------- */
 
 .equipment-card {
     padding: 26px;
@@ -745,7 +931,7 @@ section[id] {
 }
 
 
-/* Checklist */
+/* ---------- Checklist ---------- */
 
 .guide-checklist {
     overflow: hidden;
@@ -764,7 +950,7 @@ section[id] {
 }
 
 
-/* Next-step section */
+/* ---------- Beginner Guide next step ---------- */
 
 .next-step-panel {
     padding: 55px 30px;
@@ -790,7 +976,7 @@ section[id] {
 }
 
 
-/* Beginner Guide mobile layout */
+/* ---------- Beginner Guide responsive design ---------- */
 
 @media (max-width: 767.98px) {
     .page-hero {
