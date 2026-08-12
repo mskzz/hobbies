@@ -1,4 +1,4 @@
-/* Shared styles */
+/* Shared CSS for both index.html and beginnerguide.html */
 :root {
   --football-green: #08783e;
   --football-green-dark: #04582d;
@@ -226,6 +226,28 @@ button:focus-visible {
   }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Home page */
 .hero-section {
   min-height: 620px;
@@ -234,11 +256,6 @@ button:focus-visible {
   padding: 90px 0;
   color: var(--football-white);
   background-color: var(--football-dark);
-
-  background-image: linear-gradient(90deg, rgba(7, 27, 20, 0.98) 0%, rgba(7, 27, 20, 0.91) 52%, rgba(7, 27, 20, 0.7) 100%), url("../images/football-hero.jpg");
-
-  background-position: center;
-  background-size: cover;
 }
 
 .hero-copy {
@@ -298,7 +315,6 @@ button:focus-visible {
 
 .slideshow-section {
   padding: 85px 0;
-  background-color: var(--football-white);
 }
 
 .slideshow-section .container {
@@ -349,10 +365,6 @@ button:focus-visible {
 .carousel-control-prev,
 .carousel-control-next {
   width: 10%;
-}
-
-.why-football-section {
-  background-color: var(--football-white);
 }
 
 .benefit-card {
@@ -445,7 +457,7 @@ button:focus-visible {
   transform: translateX(4px);
 }
 
-.recommendation-panel {
+.recommendpanel {
   margin-top: 32px;
   padding: 28px;
   background-color: var(--football-white);
@@ -454,7 +466,7 @@ button:focus-visible {
   box-shadow: 0 10px 25px rgba(7, 27, 20, 0.08);
 }
 
-.final-cta {
+.finalcall {
   padding: 55px 30px;
   color: var(--football-white);
   background: linear-gradient(135deg, var(--football-green-dark), var(--football-green));
@@ -462,7 +474,7 @@ button:focus-visible {
   border-radius: 24px;
 }
 
-.final-cta p {
+.finalcall p {
   max-width: 650px;
   margin: 16px auto 26px;
   color: rgba(255, 255, 255, 0.83);
@@ -525,7 +537,32 @@ button:focus-visible {
   }
 }
 
-/* Beginner Guide */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CSS for beginnerguide.html */
 .football-feature-card {
   overflow: hidden;
   background-color: white;
@@ -570,13 +607,6 @@ button:focus-visible {
 
   background-position: center;
   background-size: cover;
-}
-
-.page-hero .eyebrow {
-  color: var(--football-lime);
-  font-size: 0.82rem;
-  font-weight: 800;
-  letter-spacing: 2px;
 }
 
 .page-hero-description {
@@ -775,7 +805,7 @@ button:focus-visible {
 }
 
 #ruleOne .rule-image {
-  height: 400px;
+  height: 490px;
 }
 
 #ruleTwo .rule-image {
