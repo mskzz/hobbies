@@ -6,7 +6,7 @@
 
     <meta name="description" content="A beginner-friendly guide to football rules, positions and essential equipment." />
 
-    <title>KickStart Football | Beginner Guide</title>
+    <title>Beginner Guide</title>
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
@@ -112,32 +112,60 @@
             <h3 class="fw-bold">What Football Involves</h3>
           </div>
 
-          <div class="row g-4">
-            <div class="col-md-6">
-              <article class="football-feature-card h-100">
-                <img src="images/11aside.png" class="football-feature-image formation-image" alt="Players arranged in a 4-3-3 football formation" />
+        <div class="row g-4">
 
-                <div class="football-feature-content">
-                  <h4 class="fw-bold">Formation</h4>
+    <!-- Formation -->
+    <div class="col-md-4">
+        <article class="football-feature-card h-100">
+            <img src="images/11aside.png"
+                 class="football-feature-image formation-image"
+                 alt="Players arranged in a football formation">
 
-                  <p class="mb-0">A formation organises where each player starts and how the team attacks and defends.</p>
-                </div>
-              </article>
+            <div class="football-feature-content">
+                <h4 class="fw-bold">Formation</h4>
+                <p class="mb-0">
+                    A formation organises where each player starts
+                    and how the team attacks and defends.
+                </p>
             </div>
+        </article>
+    </div>
 
-            <div class="col-md-6">
-              <article class="football-feature-card h-100">
-                <img src="images/arsenal.jpg" class="football-feature-image teamwork-image" alt="Football players having a team discussion" />
+    <!-- Teamwork -->
+    <div class="col-md-4">
+        <article class="football-feature-card h-100">
+            <img src="images/arsenal.jpg"
+                 class="football-feature-image teamwork-image"
+                 alt="Football players having a team discussion">
 
-                <div class="football-feature-content">
-                  <h4 class="fw-bold">Teamwork</h4>
-
-                  <p class="mb-0">Players communicate and support one another to work towards the same objective.</p>
-                </div>
-              </article>
+            <div class="football-feature-content">
+                <h4 class="fw-bold">Teamwork</h4>
+                <p class="mb-0">
+                    Players communicate and support one another
+                    to work towards the same objective.
+                </p>
             </div>
-          </div>
-        </div>
+        </article>
+    </div>
+
+    <!-- Ball Skills -->
+    <div class="col-md-4">
+        <article class="football-feature-card h-100">
+            <img src="images/nutmeg.gif"
+                 class="football-feature-image skills-image"
+                 alt="Football player practising ball control">
+
+            <div class="football-feature-content">
+                <h4 class="fw-bold">Skills</h4>
+                <p class="mb-0">
+                    Passing, dribbling and shooting help players
+                    control the ball during a match.
+                </p>
+            </div>
+        </article>
+    </div>
+
+</div>
       </section>
 
       <!-- Basic rules -->
@@ -149,7 +177,7 @@
             <h2 id="rules-title" class="fw-bold">Five basic football rules</h2>
 
             <p class="text-secondary">
-              Open each section when you need it. This keeps the information organised and prevents the page from becoming overwhelming.
+              Open each section to find out.
             </p>
           </div>
 
@@ -493,7 +521,7 @@
 
               <button type="submit" class="btn btn-success d-none" id="checkQuizButton">Check My Answers</button>
 
-              <button type="reset" class="btn btn-outline-secondary">Try Again</button>
+              <button type="reset" class="btn btn-outline-secondary d-none" id = "tryAgainButton">Try Again</button>
             </div>
 
             <div id="quizResult" class="alert d-none mt-4 mb-0" role="status" aria-live="polite"></div>
@@ -626,7 +654,7 @@
           <div class="section-heading text-center">
             <p class="section-kicker">PREPARE TO PLAY</p>
 
-            <h2 id="equipment-title" class="fw-bold">Essential equipment</h2>
+            <h2 id="equipment-title" class="fw-bold">Essential items </h2>
 
             <p class="text-secondary">Suitable equipment helps beginners play safely and comfortably.</p>
           </div>
@@ -710,10 +738,10 @@
     <script>
       // Recommends a position from the selected playing style.
       function findPosition() {
-        const playStyle = document.getElementById("playStyle").value;
-        const result = document.getElementById("positionResult");
-        const title = document.getElementById("positionTitle");
-        const text = document.getElementById("positionText");
+        let playStyle = document.getElementById("playStyle").value;
+        let result = document.getElementById("positionResult");
+        let title = document.getElementById("positionTitle");
+        let text = document.getElementById("positionText");
 
         if (playStyle === "") {
           title.textContent = "Please choose an option";
@@ -738,27 +766,28 @@
 
       // Updates the green bar when the user scrolls.
       function updateScrollProgress() {
-        const pageHeight = document.documentElement.scrollHeight - window.innerHeight;
-        const percentage = (window.scrollY / pageHeight) * 100;
+        let pageHeight = document.documentElement.scrollHeight - window.innerHeight;
+        let percentage = (window.scrollY / pageHeight) * 100;
         document.getElementById("scrollProgressBar").style.width = percentage + "%";
       }
 
       window.addEventListener("scroll", updateScrollProgress);
 
       // One-question-at-a-time quiz.
-      const questionNames = ["q1", "q2", "q3", "q4", "q5"];
-      const correctAnswers = ["b", "c", "b", "b", "a"];
-      const quizForm = document.getElementById("rulesQuiz");
-      const quizSteps = quizForm.querySelectorAll(".quiz-step");
-      const quizResult = document.getElementById("quizResult");
-      const navigationMessage = document.getElementById("quizNavigationMessage");
-      const currentQuestionNumber = document.getElementById("currentQuestionNumber");
-      const progressText = document.getElementById("quizProgressText");
-      const progress = document.getElementById("quizProgress");
-      const progressBar = document.getElementById("quizProgressBar");
-      const previousButton = document.getElementById("previousQuestionButton");
-      const nextButton = document.getElementById("nextQuestionButton");
-      const checkButton = document.getElementById("checkQuizButton");
+      let questionNames = ["q1", "q2", "q3", "q4", "q5"];
+      let correctAnswers = ["b", "c", "b", "b", "a"];
+      let quizForm = document.getElementById("rulesQuiz");
+      let quizSteps = quizForm.querySelectorAll(".quiz-step");
+      let quizResult = document.getElementById("quizResult");
+      let navigationMessage = document.getElementById("quizNavigationMessage");
+      let currentQuestionNumber = document.getElementById("currentQuestionNumber");
+      let progressText = document.getElementById("quizProgressText");
+      let progress = document.getElementById("quizProgress");
+      let progressBar = document.getElementById("quizProgressBar");
+      let previousButton = document.getElementById("previousQuestionButton");
+      let nextButton = document.getElementById("nextQuestionButton");
+      let checkButton = document.getElementById("checkQuizButton");
+      let tryAgainButton = document.getElementById("tryAgainButton");
 
       let currentQuestionIndex = 0;
       let quizHasBeenChecked = false;
@@ -768,7 +797,7 @@
           quizSteps[i].classList.toggle("d-none", i !== currentQuestionIndex);
         }
 
-        const percentage = Math.round(((currentQuestionIndex + 1) / quizSteps.length) * 100);
+        let percentage = Math.round(((currentQuestionIndex + 1) / quizSteps.length) * 100);
         currentQuestionNumber.textContent = currentQuestionIndex + 1;
         progressText.textContent = percentage + "% complete";
         progressBar.style.width = percentage + "%";
@@ -779,7 +808,7 @@
       }
 
       nextButton.addEventListener("click", function () {
-        const selectedAnswer = quizForm.querySelector('input[name="' + questionNames[currentQuestionIndex] + '"]:checked');
+        let selectedAnswer = quizForm.querySelector('input[name="' + questionNames[currentQuestionIndex] + '"]:checked');
 
         if (selectedAnswer === null && !quizHasBeenChecked) {
           navigationMessage.textContent = "Please select an answer before continuing.";
@@ -811,16 +840,16 @@
         event.preventDefault();
 
         let score = 0;
-        const allOptions = quizForm.querySelectorAll(".form-check");
-        const allRadioButtons = quizForm.querySelectorAll('input[type="radio"]');
+        let allOptions = quizForm.querySelectorAll(".form-check");
+        let allRadioButtons = quizForm.querySelectorAll('input[type="radio"]');
 
         for (let i = 0; i < allOptions.length; i++) {
           allOptions[i].classList.remove("selected-correct", "selected-wrong", "correct-answer");
         }
 
         for (let i = 0; i < questionNames.length; i++) {
-          const selectedAnswer = quizForm.querySelector('input[name="' + questionNames[i] + '"]:checked');
-          const correctAnswer = quizForm.querySelector('input[name="' + questionNames[i] + '"][value="' + correctAnswers[i] + '"]');
+          let selectedAnswer = quizForm.querySelector('input[name="' + questionNames[i] + '"]:checked');
+          let correctAnswer = quizForm.querySelector('input[name="' + questionNames[i] + '"][value="' + correctAnswers[i] + '"]');
 
           if (selectedAnswer === null) {
             currentQuestionIndex = i;
@@ -844,6 +873,7 @@
         }
 
         quizHasBeenChecked = true;
+        tryAgainButton.classList.remove("d-none");
         showQuestion();
 
         if (score === 5) {
@@ -859,18 +889,19 @@
       });
 
       quizForm.addEventListener("reset", function () {
-        const allOptions = quizForm.querySelectorAll(".form-check");
+        let allOptions = quizForm.querySelectorAll(".form-check");
         for (let i = 0; i < allOptions.length; i++) {
           allOptions[i].classList.remove("selected-correct", "selected-wrong", "correct-answer");
         }
 
-        const allRadioButtons = quizForm.querySelectorAll('input[type="radio"]');
+        let allRadioButtons = quizForm.querySelectorAll('input[type="radio"]');
         for (let i = 0; i < allRadioButtons.length; i++) {
           allRadioButtons[i].disabled = false;
         }
 
         currentQuestionIndex = 0;
         quizHasBeenChecked = false;
+        tryAgainButton.classList.add("d-none");
         navigationMessage.classList.add("d-none");
         quizResult.className = "alert d-none mt-4 mb-0";
         quizResult.textContent = "";
