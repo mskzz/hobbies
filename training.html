@@ -83,32 +83,70 @@
         <div class = "row g-3">
 
             <div class="col-md-4">
-                <div class ="card">
+                <!-- When card is clicked, open video() java script function starts -->
+                <div class ="card" onclick="openvideo()">
                     <img src="images/conedribbling.png">
                     <span class="difficulty beginner">Beginner</span>
                     <h1 class="fw-bold">Cone Dribbling</h1>
                     <p>Build close control and ball confidence</p>
                     <p>20 min</p>
                 </div>
+
+                <!-- Hidden video than will appear when open video() -->
+
+                <div id="popupvideo" class="popupvideo">
+
+                    <div class="video-box">
+
+                        <video controls loop width="1000">
+                            <source src="videos/conedribbling.mp4" type="video/mp4">
+                        </video>
+
+                        <button onclick="closevideo()">Close</button>
+
+                    </div>
+
+                </div>
+
             </div>
 
             <div class="col-md-4">
-                <div class ="card">
+                <div class ="card" onclick="openvideo2()">
                     <img src="images/wallpassing.png">
                     <span class="difficulty intermediate">Intermediate</span>
                     <h1 class="fw-bold">Wall Passing</h1>
                     <p>Build accuracy and first touch</p>
                     <p>20 min</p>
                 </div>
+
+                <div id="popupvideo2" class="popupvideo">
+
+                    <video controls autoplay loop width="1000">
+                        <source src="videos/wallpassing.mp4" type="video/mp4">
+                    </video>
+
+                    <button onclick="closevideo2()">Close</button>
+
+                </div>
             </div>
 
             <div class="col-md-4">
-                <div class ="card">
+                <div class ="card" onclick="openvideo3()">
                     <img src="images/targetshooting.png">
                     <span class="difficulty advanced">Advanced</span>
                     <h1 class="fw-bold">Target Shooting</h1>
                     <p>Improve power and placement</p>
                     <p>20 min</p>
+                </div>
+
+                <div id="popupvideo3" class="popupvideo">
+
+                    <video controls loop width="1000">
+                        <source src="videos/targetshooting.mp4" type="video/mp4">
+                    </video>
+                    
+                    <button onclick="closevideo3()">Close</button>
+
                 </div>
             </div>
 
@@ -239,6 +277,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
+    <script src="training.js"></script>
 </body>
 
 </html>
