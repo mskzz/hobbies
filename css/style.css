@@ -229,26 +229,7 @@ button:focus-visible {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Home page */
+/* CSS for index.html (homepage) */
 .hero-section {
   min-height: 620px;
   display: flex;
@@ -540,29 +521,7 @@ button:focus-visible {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* CSS for beginnerguide.html */
+/* CSS for beginnerguide.html (beginner guide) */
 .football-feature-card {
   overflow: hidden;
   background-color: white;
