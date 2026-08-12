@@ -1,1454 +1,768 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <meta
-      name="description"
-      content="A beginner-friendly guide to football rules, positions and essential equipment."
-    />
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>KickStart Football | Beginner Guide</title>
+    <meta name="description"
+          content="KickStart Football helps beginners learn football, practise useful skills and connect with other players.">
+
+    <title>KickStart Football | Home</title>
 
     <!-- Bootstrap 5 CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+          crossorigin="anonymous">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
+    <link rel="stylesheet" href="css/style.css">
+</head>
 
-  <body>
+<body>
+
     <!-- Accessibility link -->
-    <a class="skip-link" href="#main-content"> Skip to main content </a>
+    <a class="skip-link" href="#main-content">
+        Skip to main content
+    </a>
+
 
     <!-- Navigation -->
-    <nav
-      class="navbar navbar-expand-lg navbar-dark site-navbar sticky-top"
-      aria-label="Main navigation"
-    >
-      <div class="container">
-        <a
-          class="navbar-brand d-flex align-items-center gap-2"
-          href="index.html"
-        >
-          <span class="brand-mark" aria-hidden="true">KF</span>
-          <span class="fw-bold">KickStart Football</span>
-        </a>
+    <nav class="navbar navbar-expand-lg navbar-dark site-navbar sticky-top"
+         aria-label="Main navigation">
 
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#mainNavbar"
-          aria-controls="mainNavbar"
-          aria-expanded="false"
-          aria-label="Open navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        <div class="container">
 
-        <div class="collapse navbar-collapse" id="mainNavbar">
-          <ul class="navbar-nav ms-auto align-items-lg-center">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html"> Home </a>
-            </li>
+            <a class="navbar-brand d-flex align-items-center gap-2"
+               href="index.html">
 
-            <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="beginnerguide.html"
-              >
-                Beginner Guide
-              </a>
-            </li>
+                <span class="brand-mark" aria-hidden="true">KF</span>
+                <span class="fw-bold">KickStart Football</span>
+            </a>
 
-            <li class="nav-item">
-              <a class="nav-link" href="training.html"> Training </a>
-            </li>
+            <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#mainNavbar"
+                    aria-controls="mainNavbar"
+                    aria-expanded="false"
+                    aria-label="Open navigation">
 
-            <li class="nav-item ms-lg-2">
-              <a class="btn btn-light nav-join-button" href="joinus.html">
-                Join Us
-              </a>
-            </li>
-          </ul>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNavbar">
+
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                    <li class="nav-item">
+                        <a class="nav-link active"
+                           aria-current="page"
+                           href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link"
+                           href="beginnerguide.html">
+                            Beginner Guide
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link"
+                           href="training.html">
+                            Training
+                        </a>
+                    </li>
+
+                    <li class="nav-item ms-lg-2">
+                        <a class="btn btn-light nav-join-button"
+                           href="joinus.html">
+                            Join Us
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
         </div>
-      </div>
     </nav>
 
-    <!-- Page introduction -->
-    <header class="page-hero">
-      <div class="container">
-        <div class="row align-items-center g-5">
-          <div class="col-lg-8">
-            <p class="eyebrow mb-3">FOOTBALL MADE SIMPLE</p>
+    <!-- Scroll progress bar -->
+<div class="scroll-progress-container">
+    <div id="scrollProgressBar"
+         class="scroll-progress-bar">
+    </div>
+</div>
 
-            <h1 class="display-3 fw-bold">Beginner Guide</h1>
+    <!-- Hero section -->
+    <header class="hero-section">
 
-            <p class="lead page-hero-description">
-              Understand the essential rules, player positions and equipment you
-              need before stepping onto the field.
-            </p>
-          </div>
+        <div class="container">
+            <div class="row align-items-center g-5">
 
-          <div class="col-lg-4">
-            <aside class="page-summary" aria-labelledby="summary-title">
-              <h2 id="summary-title" class="h5 fw-bold">In this guide</h2>
+                <div class="col-lg-7 hero-copy">
 
-              <ul class="mb-0">
-                <li>How football works</li>
-                <li>Five basic rules</li>
-                <li>Four main positions</li>
-                <li>Essential equipment</li>
-              </ul>
-            </aside>
-          </div>
+                    <p class="eyebrow mb-3">
+                        LEARN • TRAIN • PLAY
+                    </p>
+
+                    <h1 class="display-3 fw-bold">
+                        Start playing football with confidence
+                    </h1>
+
+                    <p class="lead hero-description">
+                        KickStart Football gives beginners a simple path
+                        to understand the game, practise essential skills
+                        and start playing with other people.
+                    </p>
+
+                    <div class="hero-actions d-flex flex-wrap gap-3 mt-4">
+
+
+                        <a href="#experience-football"
+                           class="btn btn-outline-light btn-lg">
+                            Start Exploring!
+                        </a>
+
+                    </div>
+
+        
+                </div>
+
+
+                <div class="col-lg-5">
+
+                    <aside class="journey-card"
+                           aria-labelledby="journey-title">
+
+                        <p class="journey-label mb-2">
+                            YOUR JOURNEY
+                        </p>
+
+                        <h2 id="journey-title"
+                            class="h3 fw-bold mb-4">
+                            From beginner to player
+                        </h2>
+
+
+                        <div class="journey-step">
+
+                            <span class="step-number">1</span>
+
+                            <div>
+                                <h3 class="h5 mb-1">Learn</h3>
+
+                                <p class="mb-0">
+                                    Understand the rules, positions
+                                    and equipment.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="journey-step">
+
+                            <span class="step-number">2</span>
+
+                            <div>
+                                <h3 class="h5 mb-1">Train</h3>
+
+                                <p class="mb-0">
+                                    Practise passing, dribbling
+                                    and shooting.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="journey-step">
+
+                            <span class="step-number">3</span>
+
+                            <div>
+                                <h3 class="h5 mb-1">Play</h3>
+
+                                <p class="mb-0">
+                                    Connect with others and enjoy the game.
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </aside>
+
+                </div>
+
+            </div>
         </div>
-      </div>
+
     </header>
 
+
     <main id="main-content">
-      <!-- Scroll progress bar -->
-      <div class="scroll-progress-container">
-        <div id="scrollProgressBar" class="scroll-progress-bar"></div>
-      </div>
 
-      <!-- Quick page navigation -->
-      <section class="contents-section">
-        <div class="container">
-          <nav class="contents-card" aria-label="Beginner Guide sections">
-            <h2 class="h6 fw-bold mb-0">Jump to a section:</h2>
+        <!-- Automatic image slideshow -->
+        <section id="experience-football"
+                 class="slideshow-section"
+                 aria-labelledby="slideshow-title">
 
-            <div class="contents-links">
-              <a href="#overview">Overview</a>
-              <a href="#rules">Rules</a>
-              <a href="#positions">Positions</a>
-              <a href="#equipment">Equipment</a>
-              <a href="#checklist">Checklist</a>
-            </div>
-          </nav>
-        </div>
-      </section>
+            <div class="container">
 
-      <!-- Football overview -->
-      <section
-        id="overview"
-        class="section-space-sm"
-        aria-labelledby="overview-title"
-      >
-        <div class="container">
-          <div class="row align-items-center g-5">
-            <div class="col-lg-7">
-              <p class="section-kicker">THE BASICS</p>
+                <div class="section-heading text-center">
 
-              <h2 id="overview-title" class="fw-bold">What is football?</h2>
+                    <p class="section-kicker">
+                        EXPERIENCE FOOTBALL
+                    </p>
 
-              <p>
-                Football is a team sport where two teams try to score by moving
-                the ball into the opposing team’s goal.
-              </p>
+                    <h2 id="slideshow-title" class="fw-bold">
+                        Discover the game
+                    </h2>
 
-              <p>
-                Players mainly use their feet to control, pass and shoot the
-                ball. Success also depends on communication, teamwork and
-                understanding each player’s role.
-              </p>
+                    <p class="text-secondary">
+                        Football brings people together through training,
+                        teamwork and exciting matches.
+                    </p>
 
-              <p class="mb-0">
-                You do not need to be highly skilled to begin. Learning the
-                basics and practising regularly will help you improve over time.
-              </p>
-            </div>
-
-            <div class="col-lg-5">
-              <aside class="quick-facts-card" aria-labelledby="facts-title">
-                <h3 id="facts-title" class="h5 fw-bold">Quick facts</h3>
-
-                <ul class="mb-0">
-                  <li>
-                    <strong>Teams:</strong>
-                    Two opposing teams
-                  </li>
-
-                  <li>
-                    <strong>Objective:</strong>
-                    Score more goals
-                  </li>
-
-                  <li>
-                    <strong>Standard team:</strong>
-                    11 players
-                  </li>
-
-                  <li>
-                    <strong>Casual games:</strong>
-                    Can use fewer players
-                  </li>
-                </ul>
-              </aside>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Basic rules -->
-      <section
-        id="rules"
-        class="section-space bg-soft"
-        aria-labelledby="rules-title"
-      >
-        <div class="container">
-          <div class="section-heading text-center">
-            <p class="section-kicker">UNDERSTAND THE GAME</p>
-
-            <h2 id="rules-title" class="fw-bold">Five basic football rules</h2>
-
-            <p class="text-secondary">
-              Open each section when you need it. This keeps the information
-              organised and prevents the page from becoming overwhelming.
-            </p>
-          </div>
-
-          <div class="accordion rules-accordion" id="rulesAccordion">
-            <!-- Rule 1 -->
-            <div class="accordion-item">
-              <!-- Collapse button -->
-              <h3 class="accordion-header" id="ruleOneHeading">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#ruleOne"
-                  aria-expanded="false"
-                  aria-controls="ruleOne"
-                >
-                  1. Scoring a goal
-                </button>
-              </h3>
-
-              <!-- Collapsible content -->
-              <div
-                id="ruleOne"
-                class="accordion-collapse collapse"
-                data-bs-parent="#rulesAccordion"
-              >
-                <div class="accordion-body">
-                  <div class="row align-items-center g-4">
-                    <!-- Text on the left -->
-                    <div class="col-md-6">
-                      <p class="rule-description mb-0">
-                        A goal is scored when the whole ball crosses the goal
-                        line between the goalposts and below the crossbar.
-                      </p>
-                    </div>
-
-                    <!-- Picture on the right -->
-                    <div class="col-md-6">
-                      <figure class="rule-figure mb-0">
-                        <img
-                          src="images/goal.jpg"
-                          class="rule-image"
-                          alt="Diagram showing when a football has crossed the goal line"
-                        />
-
-                        <figcaption>
-                          The entire ball must cross the goal line for a goal to
-                          count.
-                        </figcaption>
-                      </figure>
-                    </div>
-                  </div>
                 </div>
-              </div>
-            </div>
 
-            <!-- Rule 2 -->
-            <div class="accordion-item">
-              <h3 class="accordion-header" id="ruleTwoHeading">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#ruleTwo"
-                  aria-expanded="false"
-                  aria-controls="ruleTwo"
-                >
-                  2. Using your hands
-                </button>
-              </h3>
 
-              <div
-                id="ruleTwo"
-                class="accordion-collapse collapse"
-                data-bs-parent="#rulesAccordion"
-              >
-                <div class="accordion-body">
-                  <div class="row align-items-center g-4">
-                    <div class="col-md-5">
-                      <p class="rule-description mb-0">
-                        Outfield players cannot deliberately control the ball
-                        using their hands or arms. The goalkeeper can use their
-                        hands inside their own penalty area.
-                      </p>
-                    </div>
+                <div class="carousel-frame">
 
-                    <div class="col-md-7">
-                      <figure class="rule-figure mb-0">
-                        <img
-                          src="images/nohands.jpg"
-                          class="rule-image"
-                          alt="Football handball rule illustration"
-                        />
+                    <div id="footballCarousel"
+                         class="carousel slide carousel-fade"
+                         data-bs-ride="carousel"
+                         data-bs-interval="3000"
+                         data-bs-pause="false"
+                         data-bs-wrap="true">
 
-                        <figcaption>
-                          Only the goalkeeper can handle the ball inside their
-                          own penalty area.
-                        </figcaption>
-                      </figure>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+                        <!-- Indicators -->
+                        <div class="carousel-indicators">
 
-            <!-- Rule 3 -->
-            <div class="accordion-item">
-              <h3 class="accordion-header" id="ruleThreeHeading">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#ruleThree"
-                  aria-expanded="false"
-                  aria-controls="ruleThree"
-                >
-                  3. Fouls
-                </button>
-              </h3>
+                            <button type="button"
+                                    data-bs-target="#footballCarousel"
+                                    data-bs-slide-to="0"
+                                    class="active"
+                                    aria-current="true"
+                                    aria-label="Match image">
+                            </button>
 
-              <div
-                id="ruleThree"
-                class="accordion-collapse collapse"
-                data-bs-parent="#rulesAccordion"
-              >
-                <div class="accordion-body">
-                  <div class="row align-items-center g-4">
-                    <div class="col-md-5">
-                      <p class="rule-description mb-0">
-                        Deliberately tripping, pushing or kicking another player
-                        may result in a foul and a free kick for the opposing
-                        team.
-                      </p>
-                    </div>
+                            <button type="button"
+                                    data-bs-target="#footballCarousel"
+                                    data-bs-slide-to="1"
+                                    aria-label="Training image">
+                            </button>
 
-                    <div class="col-md-7">
-                      <figure class="rule-figure mb-0">
-                        <img
-                          src="images/fouls.jpg"
-                          class="rule-image"
-                          alt="Football player committing a foul"
-                        />
+                            <button type="button"
+                                    data-bs-target="#footballCarousel"
+                                    data-bs-slide-to="2"
+                                    aria-label="Team image">
+                            </button>
 
-                        <figcaption>
-                          Unsafe or unfair physical challenges may be punished
-                          by the referee.
-                        </figcaption>
-                      </figure>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Rule 4 -->
-            <div class="accordion-item">
-              <h3 class="accordion-header" id="ruleFourHeading">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#ruleFour"
-                  aria-expanded="false"
-                  aria-controls="ruleFour"
-                >
-                  4. Ball outside the field
-                </button>
-              </h3>
-
-              <div
-                id="ruleFour"
-                class="accordion-collapse collapse"
-                data-bs-parent="#rulesAccordion"
-              >
-                <div class="accordion-body">
-                  <div class="row align-items-center g-4">
-                    <!-- Text on the left -->
-                    <div class="col-md-5">
-                      <p class="rule-description mb-0">
-                        When the ball completely crosses a boundary line, play
-                        restarts with a throw-in, goal kick or corner kick
-                        depending on where it left the field and which team
-                        touched it last.
-                      </p>
-                    </div>
-
-                    <!-- Two images on the right -->
-                    <div class="col-md-7">
-                      <div class="row g-3">
-                        <!-- First image -->
-                        <div class="col-sm-6">
-                          <figure class="rule-figure mb-0">
-                            <img
-                              src="images/throwin.jpg"
-                              class="rule-image rule-four-image"
-                              alt="Player restarting the game with a throw-in"
-                            />
-
-                            <figcaption>
-                              A throw-in restarts play when the ball crosses the
-                              side line.
-                            </figcaption>
-                          </figure>
                         </div>
 
-                        <!-- Second image -->
-                        <div class="col-sm-6">
-                          <figure class="rule-figure mb-0">
-                            <img
-                              src="images/corner.jpg"
-                              class="rule-image rule-four-image"
-                              alt="Player taking a corner kick"
-                            />
 
-                            <figcaption>
-                              A corner kick may be awarded when the defending
-                              team sends the ball over its goal line.
-                            </figcaption>
-                          </figure>
+                        <!-- Images -->
+                        <div class="carousel-inner">
+
+                            <div class="carousel-item active">
+
+                                <img src="images/barca.jpg"
+                                     class="d-block w-100 carousel-image"
+                                     alt="Football players competing in a match">
+
+                                <div class="carousel-caption">
+
+                                    <h3 class="fw-bold">
+                                        Enjoy the Game
+                                    </h3>
+
+                                    <p>
+                                        Experience the excitement of playing
+                                        and competing with others.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="carousel-item">
+
+                                <img src="images/england.jpg"
+                                     class="d-block w-100 carousel-image"
+                                     alt="Football players during training">
+
+                                <div class="carousel-caption">
+
+                                    <h3 class="fw-bold">
+                                        Improve Through Training
+                                    </h3>
+
+                                    <p>
+                                        Build your confidence by practising
+                                        useful football skills.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="carousel-item">
+
+                                <img src="images/portugal.jpg"
+                                     class="d-block w-100 carousel-image"
+                                     alt="Football teammates standing together">
+
+                                <div class="carousel-caption">
+
+                                    <h3 class="fw-bold">
+                                        Play as a Team
+                                    </h3>
+
+                                    <p>
+                                        Communicate, cooperate and meet
+                                        people who share the same interest.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
                         </div>
-                      </div>
+
+
+                        <!-- Previous button -->
+                        <button class="carousel-control-prev"
+                                type="button"
+                                data-bs-target="#footballCarousel"
+                                data-bs-slide="prev">
+
+                            <span class="carousel-control-prev-icon"
+                                  aria-hidden="true">
+                            </span>
+
+                            <span class="visually-hidden">
+                                Previous image
+                            </span>
+
+                        </button>
+
+
+                        <!-- Next button -->
+                        <button class="carousel-control-next"
+                                type="button"
+                                data-bs-target="#footballCarousel"
+                                data-bs-slide="next">
+
+                            <span class="carousel-control-next-icon"
+                                  aria-hidden="true">
+                            </span>
+
+                            <span class="visually-hidden">
+                                Next image
+                            </span>
+
+                        </button>
+
                     </div>
-                  </div>
+
                 </div>
-              </div>
             </div>
+        </section>
 
-            <!-- Rule 5 -->
-            <div class="accordion-item">
-              <h3 class="accordion-header" id="ruleFiveHeading">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#ruleFive"
-                  aria-expanded="false"
-                  aria-controls="ruleFive"
-                >
-                  5. Offside
-                </button>
-              </h3>
 
-              <div
-                id="ruleFive"
-                class="accordion-collapse collapse"
-                data-bs-parent="#rulesAccordion"
-              >
-                <div class="accordion-body">
-                  <div class="row align-items-center g-4">
-                    <div class="col-md-5">
-                      <p class="rule-description mb-0">
-                        In simple terms, an attacking player cannot wait too
-                        close to the opponent’s goal behind most defenders and
-                        then become involved when a teammate passes the ball
-                        forward.
-                      </p>
+        <!-- Why Football section -->
+        <section class="why-football-section section-space"
+                 aria-labelledby="benefits-title">
+
+            <div class="container">
+
+                <div class="row align-items-end g-4 mb-5">
+
+                    <div class="col-lg-12">
+
+                        <p class="section-kicker">
+                            WHY FOOTBALL?
+                        </p>
+
+                        <h2 id="benefits-title"
+                            class="display-6 fw-bold mb-0">
+                            A sport that develops more than physical skills
+                        </h2>
+
                     </div>
 
-                    <div class="col-md-7">
-                      <figure class="rule-figure mb-0">
-                        <img
-                          src="images/offside.jpg"
-                          class="rule-image"
-                          alt="Football offside rule illustration"
-                        />
+                   
 
-                        <figcaption>
-                          An attacker’s position is checked at the moment their
-                          teammate plays the ball.
-                        </figcaption>
-                      </figure>
-                    </div>
-                  </div>
                 </div>
-              </div>
+
+
+                <div class="row g-4">
+
+                    <!-- Fitness -->
+                    <div class="col-md-6 col-xl-3">
+
+                        <article class="benefit-card h-100">
+
+                            <span class="benefit-marker"
+                                  aria-hidden="true">
+                                01
+                            </span>
+
+                            <p class="benefit-category">
+                                PHYSICAL
+                            </p>
+
+                            <h3 class="h4 fw-bold">
+                                Improve Fitness
+                            </h3>
+
+                            <p>
+                                Running, passing and changing direction
+                                help improve stamina, balance and coordination.
+                            </p>
+
+                            <p class="benefit-result mb-0">
+                                Helps you become more active
+                            </p>
+
+                        </article>
+
+                    </div>
+
+
+                    <!-- Teamwork -->
+                    <div class="col-md-6 col-xl-3">
+
+                        <article class="benefit-card h-100">
+
+                            <span class="benefit-marker"
+                                  aria-hidden="true">
+                                02
+                            </span>
+
+                            <p class="benefit-category">
+                                SOCIAL
+                            </p>
+
+                            <h3 class="h4 fw-bold">
+                                Build Teamwork
+                            </h3>
+
+                            <p>
+                                Players communicate, support one another
+                                and work towards the same objective.
+                            </p>
+
+                            <p class="benefit-result mb-0">
+                                Helps you work better with others
+                            </p>
+
+                        </article>
+
+                    </div>
+
+
+                    <!-- Confidence -->
+                    <div class="col-md-6 col-xl-3">
+
+                        <article class="benefit-card h-100">
+
+                            <span class="benefit-marker"
+                                  aria-hidden="true">
+                                03
+                            </span>
+
+                            <p class="benefit-category">
+                                PERSONAL
+                            </p>
+
+                            <h3 class="h4 fw-bold">
+                                Grow Confidence
+                            </h3>
+
+                            <p>
+                                Learning new techniques and seeing improvement
+                                can make beginners feel more capable.
+                            </p>
+
+                            <p class="benefit-result mb-0">
+                                Encourages personal development
+                            </p>
+
+                        </article>
+
+                    </div>
+
+
+                    <!-- Community -->
+                    <div class="col-md-6 col-xl-3">
+
+                        <article class="benefit-card h-100">
+
+                            <span class="benefit-marker"
+                                  aria-hidden="true">
+                                04
+                            </span>
+
+                            <p class="benefit-category">
+                                COMMUNITY
+                            </p>
+
+                            <h3 class="h4 fw-bold">
+                                Meet New People
+                            </h3>
+
+                            <p>
+                                Football creates opportunities to connect
+                                with people who share the same interest.
+                            </p>
+
+                            <p class="benefit-result mb-0">
+                                Creates a sense of belonging
+                            </p>
+
+                        </article>
+
+                    </div>
+
+                </div>
+
+
             </div>
-          </div>
-          <!-- End of rules accordion -->
-        </div>
-        <!-- End of rules container -->
-      </section>
-      <!-- End of basic rules section -->
+        </section>
 
-      <!-- Basic rules quiz -->
-      <section
-        id="rules-quiz"
-        class="section-space"
-        aria-labelledby="quiz-title"
-      >
-        <div class="container">
-          <div class="section-heading text-center">
-            <p class="section-kicker">QUICK CHECK</p>
 
-            <h2 id="quiz-title" class="fw-bold">
-              After Understanding the Rules
-            </h2>
+    
+        <!-- Interactive recommendation -->
+        <section class="section-space"
+                 aria-labelledby="goal-title">
 
-            <p class="text-muted">
-              Try this short quiz to check your understanding of the five basic
-              football rules.
-            </p>
-          </div>
+            <div class="container">
 
-          <form id="rulesQuiz" class="quiz-card">
-            <!-- Quiz progress -->
-            <div class="d-flex justify-content-between align-items-center mb-2">
-              <p class="fw-bold mb-0">
-                Question <span id="currentQuestionNumber">1</span> of 5
-              </p>
+                <div class="goal-panel">
 
-              <p id="quizProgressText" class="small text-muted mb-0">
-                20% complete
-              </p>
+                    <div class="row align-items-center g-4">
+
+                        <div class="col-lg-5">
+
+                            <p class="section-kicker">
+                                QUICK RECOMMENDATION
+                            </p>
+
+                            <h2 id="goal-title" class="fw-bold">
+                                What is your goal?
+                            </h2>
+
+                            <p class="text-secondary mb-lg-0">
+                                Select what you would like to do and
+                                we will recommend the most useful page.
+                            </p>
+
+                        </div>
+
+
+                        <div class="col-lg-7">
+
+                            <div class="d-grid gap-3">
+
+                                <button type="button"
+                                        class="goal-button"
+                                        onclick="recommendPage('learn')">
+                                    I want to learn the rules
+                                </button>
+
+                                <button type="button"
+                                        class="goal-button"
+                                        onclick="recommendPage('train')">
+                                    I want to improve my skills
+                                </button>
+
+                                <button type="button"
+                                        class="goal-button"
+                                        onclick="recommendPage('join')">
+                                    I want to find people to play with
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div id="recommendation"
+                         class="recommendation-panel d-none"
+                         tabindex="-1"
+                         aria-live="polite">
+
+                        <h3 id="recommendationTitle"
+                            class="h4 fw-bold">
+                        </h3>
+
+                        <p id="recommendationText"></p>
+
+                        <a id="recommendationLink"
+                           class="btn btn-success"
+                           href="#">
+                        </a>
+
+                    </div>
+
+
+                    <noscript>
+                        <p class="alert alert-warning mt-4 mb-0">
+                            JavaScript is disabled. Please use the
+                            navigation menu to choose a page.
+                        </p>
+                    </noscript>
+
+                </div>
             </div>
+        </section>
 
-            <div
-              class="progress mb-4"
-              role="progressbar"
-              aria-label="Quiz progress"
-              aria-valuemin="0"
-              aria-valuemax="100"
-              aria-valuenow="20"
-              id="quizProgress"
-            >
-              <div
-                id="quizProgressBar"
-                class="progress-bar bg-success"
-                style="width: 20%"
-              ></div>
+
+        <!-- Final call to action -->
+        <section class="pb-5">
+
+            <div class="container">
+
+                <div class="final-cta text-center">
+
+                    <h2 class="fw-bold">
+                        Ready to begin?
+                    </h2>
+
+                    <p>
+                        Start with the Beginner Guide and learn the
+                        essential information every new player should know.
+                    </p>
+
+                    <a href="beginnerguide.html"
+                       class="btn btn-light btn-lg">
+                        Start Learning
+                    </a>
+
+                </div>
+
             </div>
+        </section>
 
-            <div
-              id="quizNavigationMessage"
-              class="alert alert-warning d-none"
-              role="status"
-              aria-live="polite"
-            ></div>
-
-            <!-- Question 1 -->
-            <fieldset class="quiz-question quiz-step">
-              <legend>1. When is a goal counted?</legend>
-
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="q1"
-                  id="q1a"
-                  value="a"
-                />
-
-                <label class="form-check-label" for="q1a">
-                  When part of the ball touches the goal line
-                </label>
-              </div>
-
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="q1"
-                  id="q1b"
-                  value="b"
-                />
-
-                <label class="form-check-label" for="q1b">
-                  When the whole ball crosses the goal line
-                </label>
-              </div>
-
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="q1"
-                  id="q1c"
-                  value="c"
-                />
-
-                <label class="form-check-label" for="q1c">
-                  Whenever the ball touches a goalpost
-                </label>
-              </div>
-            </fieldset>
-
-            <!-- Question 2 -->
-            <fieldset class="quiz-question quiz-step d-none">
-              <legend>2. Who can normally use their hands during play?</legend>
-
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="q2"
-                  id="q2a"
-                  value="a"
-                />
-
-                <label class="form-check-label" for="q2a"> Every player </label>
-              </div>
-
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="q2"
-                  id="q2b"
-                  value="b"
-                />
-
-                <label class="form-check-label" for="q2b">
-                  Only the team captain
-                </label>
-              </div>
-
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="q2"
-                  id="q2c"
-                  value="c"
-                />
-
-                <label class="form-check-label" for="q2c">
-                  The goalkeeper inside their own penalty area
-                </label>
-              </div>
-            </fieldset>
-
-            <!-- Question 3 -->
-            <fieldset class="quiz-question quiz-step d-none">
-              <legend>3. Which action is normally considered a foul?</legend>
-
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="q3"
-                  id="q3a"
-                  value="a"
-                />
-
-                <label class="form-check-label" for="q3a">
-                  Passing the ball to a teammate
-                </label>
-              </div>
-
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="q3"
-                  id="q3b"
-                  value="b"
-                />
-
-                <label class="form-check-label" for="q3b">
-                  Tripping an opponent
-                </label>
-              </div>
-
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="q3"
-                  id="q3c"
-                  value="c"
-                />
-
-                <label class="form-check-label" for="q3c">
-                  Scoring a goal
-                </label>
-              </div>
-            </fieldset>
-
-            <!-- Question 4 -->
-            <fieldset class="quiz-question quiz-step d-none">
-              <legend>
-                4. What happens when the ball crosses the side line?
-              </legend>
-
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="q4"
-                  id="q4a"
-                  value="a"
-                />
-
-                <label class="form-check-label" for="q4a">
-                  Play continues
-                </label>
-              </div>
-
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="q4"
-                  id="q4b"
-                  value="b"
-                />
-
-                <label class="form-check-label" for="q4b">
-                  The game restarts with a throw-in
-                </label>
-              </div>
-
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="q4"
-                  id="q4c"
-                  value="c"
-                />
-
-                <label class="form-check-label" for="q4c">
-                  A goal is awarded
-                </label>
-              </div>
-            </fieldset>
-
-            <!-- Question 5 -->
-            <fieldset class="quiz-question quiz-step d-none">
-              <legend>
-                5. When is a player’s position checked for offside?
-              </legend>
-
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="q5"
-                  id="q5a"
-                  value="a"
-                />
-
-                <label class="form-check-label" for="q5a">
-                  When their teammate plays the ball
-                </label>
-              </div>
-
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="q5"
-                  id="q5b"
-                  value="b"
-                />
-
-                <label class="form-check-label" for="q5b">
-                  Only after a goal is scored
-                </label>
-              </div>
-
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="q5"
-                  id="q5c"
-                  value="c"
-                />
-
-                <label class="form-check-label" for="q5c">
-                  When the referee ends the match
-                </label>
-              </div>
-            </fieldset>
-
-            <!-- Quiz buttons -->
-            <div class="d-flex flex-wrap gap-2">
-              <button
-                type="button"
-                class="btn btn-outline-success d-none"
-                id="previousQuestionButton"
-              >
-                Previous
-              </button>
-
-              <button
-                type="button"
-                class="btn btn-success"
-                id="nextQuestionButton"
-              >
-                Next Question
-              </button>
-
-              <button
-                type="submit"
-                class="btn btn-success d-none"
-                id="checkQuizButton"
-              >
-                Check My Answers
-              </button>
-
-              <button type="reset" class="btn btn-outline-secondary">
-                Try Again
-              </button>
-            </div>
-
-            <!-- Quiz result -->
-            <div
-              id="quizResult"
-              class="alert d-none mt-4 mb-0"
-              role="status"
-              aria-live="polite"
-            ></div>
-          </form>
-        </div>
-      </section>
-
-      <!-- Football video -->
-      <section
-        id="football-video"
-        class="section-space bg-soft"
-        aria-labelledby="video-title"
-      >
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-lg-9">
-              <div class="section-heading text-center">
-                <p class="section-kicker">WATCH AND LEARN</p>
-
-                <h2 id="video-title" class="fw-bold">
-                  Want to Understand More?
-                </h2>
-
-                <p class="text-muted">
-                  Watch this short video for a visual explanation of the basic
-                  rules of football.
-                </p>
-              </div>
-
-              <!-- Responsive YouTube video -->
-              <div class="ratio ratio-16x9 rounded overflow-hidden shadow-sm">
-                <iframe
-                  src="https://www.youtube.com/embed/UTFSgD9jNS0?si=uOtjLqjLcdHHrPbc"
-                  title="Basic football rules video"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen
-                >
-                </iframe>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Positions -->
-      <section
-        id="positions"
-        class="section-space"
-        aria-labelledby="positions-title"
-      >
-        <div class="container">
-          <div class="section-heading text-center">
-            <p class="section-kicker">FIND YOUR ROLE</p>
-
-            <h2 id="positions-title" class="fw-bold">Football positions</h2>
-
-            <p class="text-secondary">
-              Compare the responsibilities and useful qualities of each main
-              position.
-            </p>
-          </div>
-
-          <!-- Responsive table -->
-          <div class="table-responsive position-table-wrapper">
-            <table class="table position-table align-middle mb-0">
-              <caption class="visually-hidden">
-                Comparison of the four main football positions
-              </caption>
-
-              <thead>
-                <tr>
-                  <th scope="col">Position</th>
-                  <th scope="col">Main responsibility</th>
-                  <th scope="col">Useful qualities</th>
-                </tr>
-              </thead>
-
-              <tbody>
-                <tr>
-                  <th scope="row">Goalkeeper</th>
-                  <td>Protects the goal and stops shots.</td>
-                  <td>Reactions, communication and confidence</td>
-                </tr>
-
-                <tr>
-                  <th scope="row">Defender</th>
-                  <td>Stops attacks and protects the defensive area.</td>
-                  <td>Strength, positioning and tackling</td>
-                </tr>
-
-                <tr>
-                  <th scope="row">Midfielder</th>
-                  <td>Connects the defence and attack.</td>
-                  <td>Passing, stamina and awareness</td>
-                </tr>
-
-                <tr>
-                  <th scope="row">Forward</th>
-                  <td>Creates chances and attempts to score.</td>
-                  <td>Shooting, movement and speed</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <!-- Interactive position finder -->
-          <div class="position-finder mt-5">
-            <div class="row align-items-center g-4">
-              <div class="col-lg-5">
-                <p class="section-kicker">INTERACTIVE FEATURE</p>
-
-                <h3 class="fw-bold">Which position might suit you?</h3>
-
-                <p class="text-secondary mb-lg-0">
-                  Choose the activity you enjoy most and receive a
-                  beginner-friendly position recommendation.
-                </p>
-              </div>
-
-              <div class="col-lg-7">
-                <label for="playStyle" class="form-label fw-bold">
-                  What would you enjoy doing?
-                </label>
-
-                <select id="playStyle" class="form-select form-select-lg">
-                  <option value="">Choose an option</option>
-
-                  <option value="goalkeeper">
-                    Protecting the goal and stopping shots
-                  </option>
-
-                  <option value="defender">
-                    Stopping opponents and winning the ball
-                  </option>
-
-                  <option value="midfielder">
-                    Passing and controlling the game
-                  </option>
-
-                  <option value="forward">Attacking and scoring goals</option>
-                </select>
-
-                <button
-                  type="button"
-                  class="btn btn-success mt-3"
-                  onclick="findPosition()"
-                >
-                  Recommend a Position
-                </button>
-              </div>
-            </div>
-
-            <div
-              id="positionResult"
-              class="position-result d-none"
-              tabindex="-1"
-              aria-live="polite"
-            >
-              <h4 id="positionTitle" class="h4 fw-bold">
-                Your recommended position
-              </h4>
-
-              <p id="positionText" class="mb-0"></p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Equipment -->
-      <section
-        id="equipment"
-        class="section-space bg-soft"
-        aria-labelledby="equipment-title"
-      >
-        <div class="container">
-          <div class="section-heading text-center">
-            <p class="section-kicker">PREPARE TO PLAY</p>
-
-            <h2 id="equipment-title" class="fw-bold">Essential equipment</h2>
-
-            <p class="text-secondary">
-              Suitable equipment helps beginners play safely and comfortably.
-            </p>
-          </div>
-
-          <div class="row g-4">
-            <div class="col-sm-6 col-lg-3">
-              <article class="equipment-card h-100">
-                <span class="equipment-number" aria-hidden="true"> 01 </span>
-
-                <h3 class="h5 fw-bold">Football Boots</h3>
-
-                <p class="mb-0">
-                  Suitable footwear provides grip and helps players move safely
-                  on the playing surface.
-                </p>
-              </article>
-            </div>
-
-            <div class="col-sm-6 col-lg-3">
-              <article class="equipment-card h-100">
-                <span class="equipment-number" aria-hidden="true"> 02 </span>
-
-                <h3 class="h5 fw-bold">Shin Guards</h3>
-
-                <p class="mb-0">
-                  Shin guards help protect the lower legs from accidental
-                  contact and tackles.
-                </p>
-              </article>
-            </div>
-
-            <div class="col-sm-6 col-lg-3">
-              <article class="equipment-card h-100">
-                <span class="equipment-number" aria-hidden="true"> 03 </span>
-
-                <h3 class="h5 fw-bold">Sports Clothing</h3>
-
-                <p class="mb-0">
-                  Comfortable clothing allows players to move freely during
-                  training and matches.
-                </p>
-              </article>
-            </div>
-
-            <div class="col-sm-6 col-lg-3">
-              <article class="equipment-card h-100">
-                <span class="equipment-number" aria-hidden="true"> 04 </span>
-
-                <h3 class="h5 fw-bold">Water Bottle</h3>
-
-                <p class="mb-0">
-                  Bringing water helps players stay hydrated during physical
-                  activity.
-                </p>
-              </article>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Checklist -->
-      <section
-        id="checklist"
-        class="section-space"
-        aria-labelledby="checklist-title"
-      >
-        <div class="container">
-          <div class="row align-items-center g-5">
-            <div class="col-lg-5">
-              <p class="section-kicker">BEFORE YOU PLAY</p>
-
-              <h2 id="checklist-title" class="fw-bold">
-                First-session checklist
-              </h2>
-
-              <p class="text-secondary">
-                This checklist helps beginners prepare without forgetting
-                important items or safety steps.
-              </p>
-            </div>
-
-            <div class="col-lg-7">
-              <ol class="list-group list-group-numbered guide-checklist">
-                <li class="list-group-item">
-                  Wear comfortable sports clothing.
-                </li>
-
-                <li class="list-group-item">
-                  Bring suitable shoes and shin guards.
-                </li>
-
-                <li class="list-group-item">
-                  Carry enough water to stay hydrated.
-                </li>
-
-                <li class="list-group-item">
-                  Warm up before intense physical activity.
-                </li>
-
-                <li class="list-group-item">
-                  Listen to instructions and respect other players.
-                </li>
-              </ol>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Next step -->
-      <section class="pb-5">
-        <div class="container">
-          <div class="next-step-panel text-center">
-            <p class="section-kicker">NEXT STEP</p>
-
-            <h2 class="fw-bold">Ready to practise?</h2>
-
-            <p>
-              Continue to the Training page for beginner-friendly passing,
-              dribbling and shooting activities.
-            </p>
-
-            <a href="training.html" class="btn btn-light btn-lg">
-              View Training
-            </a>
-          </div>
-        </div>
-      </section>
     </main>
+
 
     <!-- Footer -->
     <footer class="site-footer">
-      <div class="container">
-        <div class="row align-items-center g-3">
-          <div class="col-md-6 text-center text-md-start">
-            <p class="fw-bold mb-1">KickStart Football</p>
 
-            <p class="small mb-0">Helping beginners learn, train and play.</p>
-          </div>
+        <div class="container">
+            <div class="row align-items-center g-3">
 
-          <div class="col-md-6 text-center text-md-end">
-            <p class="small mb-0">Created by Sheng Kai and Wilson</p>
-          </div>
+                <div class="col-md-6 text-center text-md-start">
+
+                    <p class="fw-bold mb-1">
+                        KickStart Football
+                    </p>
+
+                    <p class="small mb-0">
+                        Helping beginners learn, train and play.
+                    </p>
+
+                </div>
+
+                <div class="col-md-6 text-center text-md-end">
+
+                    <p class="small mb-0">
+                        Created by Sheng Kai and Wilson
+                    </p>
+
+                </div>
+
+            </div>
         </div>
-      </div>
+
     </footer>
 
-    <!-- Position Finder JavaScript -->
-    <script>
-      function findPosition() {
-        const playStyle = document.getElementById("playStyle").value;
-        const result = document.getElementById("positionResult");
-        const title = document.getElementById("positionTitle");
-        const text = document.getElementById("positionText");
-
-        if (playStyle === "") {
-          title.textContent = "Please choose an option";
-          text.textContent =
-            "Select the activity you enjoy before requesting a recommendation.";
-        } else if (playStyle === "goalkeeper") {
-          title.textContent = "Recommended position: Goalkeeper";
-          text.textContent =
-            "Goalkeeper may suit you because you enjoy protecting the goal and reacting to shots.";
-        } else if (playStyle === "defender") {
-          title.textContent = "Recommended position: Defender";
-          text.textContent =
-            "Defender may suit you because you enjoy stopping attacks and winning possession.";
-        } else if (playStyle === "midfielder") {
-          title.textContent = "Recommended position: Midfielder";
-          text.textContent =
-            "Midfielder may suit you because you enjoy passing, controlling play and supporting the team.";
-        } else {
-          title.textContent = "Recommended position: Forward";
-          text.textContent =
-            "Forward may suit you because you enjoy attacking, creating chances and scoring goals.";
-        }
-
-        result.classList.remove("d-none");
-        result.focus();
-      }
-    </script>
-
-    <script>
-      function updateScrollProgress() {
-        const scrollTop = window.scrollY;
-
-        const scrollableHeight =
-          document.documentElement.scrollHeight - window.innerHeight;
-
-        const progress = (scrollTop / scrollableHeight) * 100;
-
-        document.getElementById("scrollProgressBar").style.width =
-          progress + "%";
-      }
-
-      window.addEventListener("scroll", updateScrollProgress);
-    </script>
-
-    <script>
-      const questionNames = ["q1", "q2", "q3", "q4", "q5"];
-      const correctAnswers = ["b", "c", "b", "b", "a"];
-
-      const quizForm = document.getElementById("rulesQuiz");
-      const quizSteps = quizForm.querySelectorAll(".quiz-step");
-      const quizResult = document.getElementById("quizResult");
-      const navigationMessage = document.getElementById(
-        "quizNavigationMessage",
-      );
-      const currentQuestionNumber = document.getElementById(
-        "currentQuestionNumber",
-      );
-      const progressText = document.getElementById("quizProgressText");
-      const progress = document.getElementById("quizProgress");
-      const progressBar = document.getElementById("quizProgressBar");
-      const previousButton = document.getElementById("previousQuestionButton");
-      const nextButton = document.getElementById("nextQuestionButton");
-      const checkButton = document.getElementById("checkQuizButton");
-
-      let currentQuestionIndex = 0;
-      let quizHasBeenChecked = false;
-
-      /* Display only one question */
-      function showQuestion(questionIndex) {
-        for (let i = 0; i < quizSteps.length; i++) {
-          if (i === questionIndex) {
-            quizSteps[i].classList.remove("d-none");
-          } else {
-            quizSteps[i].classList.add("d-none");
-          }
-        }
-
-        const progressPercentage = Math.round(
-          ((questionIndex + 1) / quizSteps.length) * 100,
-        );
-
-        currentQuestionNumber.textContent = questionIndex + 1;
-        progressText.textContent = progressPercentage + "% complete";
-        progressBar.style.width = progressPercentage + "%";
-        progress.setAttribute("aria-valuenow", progressPercentage);
-
-        previousButton.classList.toggle("d-none", questionIndex === 0);
-
-        if (quizHasBeenChecked) {
-          nextButton.classList.toggle(
-            "d-none",
-            questionIndex === quizSteps.length - 1,
-          );
-          checkButton.classList.add("d-none");
-        } else {
-          nextButton.classList.toggle(
-            "d-none",
-            questionIndex === quizSteps.length - 1,
-          );
-          checkButton.classList.toggle(
-            "d-none",
-            questionIndex !== quizSteps.length - 1,
-          );
-        }
-      }
-
-      /* Go to the next question */
-      nextButton.addEventListener("click", function () {
-        const currentQuestionName = questionNames[currentQuestionIndex];
-        const selectedAnswer = quizForm.querySelector(
-          'input[name="' + currentQuestionName + '"]:checked',
-        );
-
-        if (selectedAnswer === null && quizHasBeenChecked === false) {
-          navigationMessage.textContent =
-            "Please select an answer before continuing.";
-          navigationMessage.classList.remove("d-none");
-          return;
-        }
-
-        navigationMessage.classList.add("d-none");
-
-        if (currentQuestionIndex < quizSteps.length - 1) {
-          currentQuestionIndex++;
-          showQuestion(currentQuestionIndex);
-        }
-      });
-
-      /* Return to the previous question */
-      previousButton.addEventListener("click", function () {
-        navigationMessage.classList.add("d-none");
-
-        if (currentQuestionIndex > 0) {
-          currentQuestionIndex--;
-          showQuestion(currentQuestionIndex);
-        }
-      });
-
-      /* Hide the warning after an option is selected */
-      quizForm.addEventListener("change", function () {
-        navigationMessage.classList.add("d-none");
-      });
-
-      quizForm.addEventListener("submit", function (event) {
-        event.preventDefault();
-
-        let score = 0;
-        let firstUnansweredQuestion = -1;
-
-        /* Remove the previous answer colours */
-        const allOptions = quizForm.querySelectorAll(".form-check");
-
-        for (let i = 0; i < allOptions.length; i++) {
-          allOptions[i].classList.remove(
-            "selected-correct",
-            "selected-wrong",
-            "correct-answer",
-          );
-        }
-
-        /* Find an unanswered question */
-        for (let i = 0; i < questionNames.length; i++) {
-          const selectedAnswer = quizForm.querySelector(
-            'input[name="' + questionNames[i] + '"]:checked',
-          );
-
-          if (selectedAnswer === null) {
-            firstUnansweredQuestion = i;
-            break;
-          }
-        }
-
-        if (firstUnansweredQuestion !== -1) {
-          currentQuestionIndex = firstUnansweredQuestion;
-          showQuestion(currentQuestionIndex);
-
-          navigationMessage.textContent =
-            "Please answer this question before checking your score.";
-          navigationMessage.classList.remove("d-none");
-          return;
-        }
-
-        /* Check every answer */
-        for (let i = 0; i < questionNames.length; i++) {
-          const selectedAnswer = quizForm.querySelector(
-            'input[name="' + questionNames[i] + '"]:checked',
-          );
-
-          const correctAnswer = quizForm.querySelector(
-            'input[name="' +
-              questionNames[i] +
-              '"][value="' +
-              correctAnswers[i] +
-              '"]',
-          );
-
-          if (selectedAnswer.value === correctAnswers[i]) {
-            score++;
-
-            selectedAnswer.parentElement.classList.add("selected-correct");
-          } else {
-            selectedAnswer.parentElement.classList.add("selected-wrong");
-            correctAnswer.parentElement.classList.add("correct-answer");
-          }
-        }
-
-        /* Stop answers from changing after the result is shown */
-        const allRadioButtons = quizForm.querySelectorAll(
-          'input[type="radio"]',
-        );
-
-        for (let i = 0; i < allRadioButtons.length; i++) {
-          allRadioButtons[i].disabled = true;
-        }
-
-        quizHasBeenChecked = true;
-        showQuestion(currentQuestionIndex);
-
-        quizResult.classList.remove(
-          "d-none",
-          "alert-success",
-          "alert-warning",
-          "alert-danger",
-        );
-
-        if (score === 5) {
-          quizResult.classList.add("alert-success");
-
-          quizResult.textContent = "Excellent! You scored 5 out of 5.";
-        } else if (score >= 3) {
-          quizResult.classList.add("alert-warning");
-
-          quizResult.textContent =
-            "Good try! You scored " +
-            score +
-            " out of 5. Use Previous to review the answers marked in red.";
-        } else {
-          quizResult.classList.add("alert-danger");
-
-          quizResult.textContent =
-            "You scored " +
-            score +
-            " out of 5. Use Previous to review the correct answers shown in green.";
-        }
-      });
-
-      /* Remove all feedback when Try Again is clicked */
-      quizForm.addEventListener("reset", function () {
-        const allOptions = quizForm.querySelectorAll(".form-check");
-
-        for (let i = 0; i < allOptions.length; i++) {
-          allOptions[i].classList.remove(
-            "selected-correct",
-            "selected-wrong",
-            "correct-answer",
-          );
-        }
-
-        const allRadioButtons = quizForm.querySelectorAll(
-          'input[type="radio"]',
-        );
-
-        for (let i = 0; i < allRadioButtons.length; i++) {
-          allRadioButtons[i].disabled = false;
-        }
-
-        currentQuestionIndex = 0;
-        quizHasBeenChecked = false;
-        navigationMessage.classList.add("d-none");
-
-        quizResult.classList.add("d-none");
-
-        quizResult.classList.remove(
-          "alert-success",
-          "alert-warning",
-          "alert-danger",
-        );
-
-        quizResult.textContent = "";
-
-        showQuestion(currentQuestionIndex);
-      });
-
-      showQuestion(currentQuestionIndex);
-    </script>
 
     <!-- Bootstrap 5 JavaScript -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"></script>
+
+<script> function updateScrollProgress() {
+    const scrollTop = window.scrollY;
+
+    const scrollableHeight =
+        document.documentElement.scrollHeight - window.innerHeight;
+
+    const progress =
+        (scrollTop / scrollableHeight) * 100;
+
+    document.getElementById("scrollProgressBar").style.width =
+        progress + "%";
+}
+
+window.addEventListener("scroll", updateScrollProgress);
+</script>
+
+
+
+
+
+    <!-- Custom JavaScript -->
+    <script>
+        function recommendPage(goal) {
+            const recommendations = {
+                learn: {
+                    title: "Start with the Beginner Guide",
+                    text: "Learn the basic rules, positions and equipment before playing.",
+                    button: "Beginner Guide",
+                    page: "beginnerguide.html"
+                },
+
+                train: {
+                    title: "Continue to the Training page",
+                    text: "Practise beginner drills for passing, dribbling and shooting.",
+                    button: "Training",
+                    page: "training.html"
+                },
+
+                join: {
+                    title: "Continue to the Join Us page",
+                    text: "Register your interest and connect with other football players.",
+                    button: "Join Us",
+                    page: "joinus.html"
+                }
+            };
+
+            const choice = recommendations[goal];
+
+            const recommendation =
+                document.getElementById("recommendation");
+
+            document.getElementById("recommendationTitle").textContent =
+                choice.title;
+
+            document.getElementById("recommendationText").textContent =
+                choice.text;
+
+            const link =
+                document.getElementById("recommendationLink");
+
+            link.textContent = choice.button;
+            link.href = choice.page;
+
+            recommendation.classList.remove("d-none");
+            recommendation.focus();
+        }
+    </script>
+
+</body>
+
 </html>
