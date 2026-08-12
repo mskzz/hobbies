@@ -131,25 +131,26 @@
     <br>
     <h3> JOIN OUR TRANING SESSIONS </h3>
     <p> No fixed time required </p>
-    <form>
+    <!-- Form submitted script submit() -->
+    <form action="formsubmissions.html">
         <div class="form-field">
         <label>Name</label>
-        <input type="text">
+        <input type="text" required id="name" name="name">
         </div>
 
         <div class="form-field">
         <label>Email</label>
-        <input type="email">
+        <input type="email" required id="email" name="email">
         </div>
 
         <div class="form-field">
         <label>Age</label>
-        <input type="number">
+        <input type="number" required id="age" name="age">
         </div>
 
         <div class="form-field">
          <label>Skill Level:</label>
-        <select>
+        <select required id="skill" name="skill">
             <option>Beginner</option>
             <option>Intermediate</option>
             <option>Advanced</option>
@@ -157,8 +158,8 @@
         </div>
 
         <div class="form-field">
-        <label>Preferred Day </label>
-        <select>
+        <label>Preferred Day</label>
+        <select required id="day" name="day">
             <option>Monday</option>
             <option>Wednesday</option>
             <option>Friday</option>
@@ -192,7 +193,7 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-
+    <script src="joinus.js"></script>
 </body>
 
 </html>
