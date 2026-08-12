@@ -1,0 +1,20 @@
+.response-header{
+    text-align: center;
+    margin-top:40px;
+}
+
+.response-card {
+    width: 600px;
+    margin: 60px auto;
+    padding: 40px;
+
+    background-color: #f5f8f6;
+    border: 1px solid #dce5df;
+    border-radius: 18px;
+
+    text-align: center;
+}
+
+.response-card h2 {
+    margin-bottom: 25px;
+}
