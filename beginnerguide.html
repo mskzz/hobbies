@@ -769,6 +769,9 @@
       }
 
       // Updates the green bar when the user scrolls.
+      // this is a progress bar at the top of the website
+      // i have used youtube tutorials for reference on how to make
+      //youtube link : https://www.youtube.com/watch?v=4LBRMSk6PLY
       function updateScrollProgress() {
         let pageHeight = document.documentElement.scrollHeight - window.innerHeight;
         let percentage = (window.scrollY / pageHeight) * 100;
@@ -778,6 +781,8 @@
       window.addEventListener("scroll", updateScrollProgress);
 
       // One-question-at-a-time quiz.
+      // AI is used to help on how to make a quiz, and how the answers is checked and saved
+      // AI cite :  https://chatgpt.com/c/6a807b90-a098-83ec-abb3-d4098fdbe148
       let questionNames = ["q1", "q2", "q3", "q4", "q5"];
       let correctAnswers = ["b", "c", "b", "b", "a"];
       
