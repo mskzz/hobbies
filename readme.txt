@@ -25,7 +25,7 @@ Videos - Wilson
 
 Images - Sheng kai / Wilson
 
-AI Tools Used:
+Tools Used:
 
 Wilson: ChatGPT
-Shengkai: https://www.youtube.com/watch?v=4LBRMSk6PLY
+Shengkai: https://www.youtube.com/watch?v=4LBRMSk6PLY, https://chatgpt.com/c/6a807b90-a098-83ec-abb3-d4098fdbe148
