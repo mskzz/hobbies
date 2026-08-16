@@ -1,5 +1,5 @@
 /* =========================
-   Shared website colours
+   Shared webpage design, taken from sheng kai style.css
    ========================= */
 
 :root {
@@ -13,20 +13,12 @@
 }
 
 
-/* =========================
-   General
-   ========================= */
-
 body {
     margin: 0;
     font-family: "Segoe UI", Arial, sans-serif;
     color: var(--football-text);
 }
 
-
-/* =========================
-   Navbar
-   ========================= */
 
 .site-navbar {
     min-height: 72px;
@@ -75,9 +67,14 @@ body {
     font-weight: 700;
 }
 
+/* ----------------------------------------------------------------------------- */
+
+
+
+
 
 /* =========================
-   Your page
+   My page
    ========================= */
 
 .page-section {
@@ -86,7 +83,7 @@ body {
 
 
 /* =========================
-   Footer
+   Footer, taken from sheng kai style.css to match style of webpage
    ========================= */
 
 .site-footer {
@@ -99,6 +96,7 @@ body {
 .site-footer .fw-bold {
     color: white;
 }
+
 
 /* ==========================
 */
@@ -205,6 +203,8 @@ body {
     padding: 14px 18px;
     text-align: left;
 }
+
+/* Call to action taken from shengkai style.css to match style of webpage */
 
 .final-cta {
     margin-top:50px;
@@ -443,6 +443,10 @@ body {
     transition: 0.2s;
 }
 
+/* =========================
+   scroll progress bar taken from sheng kai style.css to match style of webpage
+   ========================= */
+
 .scroll-progress-container {
     position: fixed;
     top: 0;
@@ -466,6 +470,9 @@ body {
     width: 90%;
     max-width: 1000px;
 }
+
+
+/* AI was used below */
 
 @media (max-width: 768px) {
 
