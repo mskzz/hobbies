@@ -27,4 +27,4 @@ Images - Sheng kai / Wilson
 
 AI Tools Used:
 
-chatGPT
+ChatGPT
